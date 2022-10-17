@@ -1,11 +1,11 @@
 <header class="header-area header-wrapper">
     <!-- header-top-bar -->
-    <div class="header-top-bar plr-185">
+    <div class="header-top-bar plr-185 bg-primary text-white">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 d-none d-md-block">
                     <div class="call-us">
-                        <p class="mb-0 roboto">Liên Hệ: 0967758023</p>
+                        <p class="mb-0 roboto  text-white">Liên Hệ: 0967758023</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -73,12 +73,12 @@
                     <div class="col-lg-8 d-none d-lg-block">
                         <nav id="primary-menu">
                             <ul class="main-menu text-center">
-                                <li><a href="{{ asset('') }}">Trang Chủ</a></li>
-                                {{-- <li><a href="{{ asset('') }}gioi-thieu">Giới Thiệu</a></li> --}}
-                                {{-- <li><a href="{{ asset('') }}cua-hang">Laptop</a></li> --}}
+                                <li  ><a href="{{ asset('') }}">Trang Chủ</a></li>
+                                <li><a href="{{ asset('') }}gioi-thieu">Giới Thiệu</a></li>
+                                <li><a href="{{ asset('') }}cua-hang">Phụ kiện</a></li>
                                 <li><a href="{{ asset('') }}dat-lich">Đặt Lịch</a></li>
-                                {{-- <li><a href="{{ asset('') }}tin-tuc">Tin Tức</a></li>
-                                <li><a href="{{ asset('') }}lien-he">Liên Hệ</a></li> --}}
+                                <li><a href="{{ asset('') }}tin-tuc">Tin Tức</a></li>
+                                <li><a href="{{ asset('') }}lien-he">Liên Hệ</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -221,12 +221,12 @@
                 <div class="mobile-menu">
                     <nav id="dropdown">
                         <ul>
-                            <li><a href="{{ asset('') }}">Trang Chủ</a></li>
-                            {{-- <li><a href="{{ asset('') }}gioi-thieu">Giới Thiệu</a></li>
-                            <li><a href="{{ asset('') }}cua-hang">Laptop</a></li> --}}
+                            <li><a href="{{ asset('') }}">Trang Chủ số 1</a></li>
+                            <li><a href="{{ asset('') }}gioi-thieu">Giới Thiệu</a></li>
+                            <li><a href="{{ asset('') }}cua-hang">Laptop</a></li>
                             <li><a href="{{ asset('') }}dat-lich">Đặt Lịch</a></li>
-                            {{-- <li><a href="{{ asset('') }}tin-tuc">Tin Tức</a></li>
-                            <li><a href="{{ asset('') }}lien-he">Liên Hệ</a></li> --}}
+                            <li><a href="{{ asset('') }}tin-tuc">Tin Tức</a></li>
+                            <li><a href="{{ asset('') }}lien-he">Liên Hệ</a></li>
                         </ul>
                     </nav>
                 </div>
