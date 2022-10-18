@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumbs-inner">
-                                <h1 class="breadcrumbs-title">Giới thiệu về hệ thống Sửa chữa Laptop 51</h1>
+                                <h1 class="breadcrumbs-title">Giới thiệu về hệ thống Sửa chữa xe máy</h1>
                                 <ul class="breadcrumb-list">
                                     <li><a href="index.html">Trang Chủ</a></li>
                                     <li>Giới Thiệu</li>
@@ -44,8 +44,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="section-title text-left ">
-                                <h2 class="uppercase">Giới thiệu về hệ thống Sửa chữa Laptop 51</h2>
-                                <h6 class="mb-40">Sửa chữa Laptop 51 - "Dịch vụ uy tín hàng đầu Việt Nam"</h6>
+                                <h2 class="uppercase">Giới thiệu về hệ thống Sửa chữa xe máy</h2>
+                                <h6 class="mb-40">Sửa chữa xe máy - "Dịch vụ uy tín hàng đầu Việt Nam"</h6>
                             </div>
                         </div>
                     </div>
@@ -57,38 +57,16 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="about-description mt-50">
-                                <p>Sửa chữa Laptop 51 xin gửi lời cảm ơn sâu sắc tới Quý khách hàng đã quan tâm và ủng
-                                    hộ
-                                    trong suốt 10 năm qua. Hàng triệu chiếc laptop đã được đưa tới trung tâm để sửa chữa
-                                    nhằm mang lại niềm vui, hiệu quả và lợi ích cho khách hàng. Với giá trị cốt lõi luôn
-                                    lấy
-                                    "TẬN TÂM - UY TÍN - CHUYÊN NGHIỆP" đặt lên hàng đầu, quan điểm hoạt động của trung
-                                    tâm
-                                    là làm việc nghiêm túc, trách nhiệm, đặt lợi ích khách hàng lên số 1 và hướng tới
-                                    hợp
-                                    tác, chia sẻ cùng các đối tác để đi tới thành công.</p>
+                                <p>Sửa chữa xe máy xin gửi lời cảm ơn sâu sắc tới Quý khách hàng đã quan tâm và ủng hộ trong suốt 10 năm qua. Hàng triệu chiếc xe máy đã được đưa tới trung tâm để sửa chữa nhằm mang lại niềm vui, hiệu quả và lợi ích cho khách
+                                    hàng. Với giá trị cốt lõi luôn lấy "TẬN TÂM - UY TÍN - CHUYÊN NGHIỆP" đặt lên hàng đầu, quan điểm hoạt động của trung tâm là làm việc nghiêm túc, trách nhiệm, đặt lợi ích khách hàng lên số 1 và hướng tới hợp tác, chia
+                                    sẻ cùng các đối tác để đi tới thành công.</p>
 
-                                <p>Sửa chữa Laptop 51 được thành lập vào ngày 07/06/2011. Đây là hệ thống trung tâm
-                                    chuyên
-                                    về lĩnh vực thương mại và dịch vụ tin học - viễn thông, tiên phong trong lĩnh vực
-                                    dịch
-                                    vụ sửa chữa máy tính, laptop, macbook, smartphone và phân phối các linh phụ kiện
-                                    điện
-                                    tử, máy tính, laptop. Trung tâm đã và đang là đối tác của nhiều hãng điện tử nổi
-                                    tiếng
-                                    như: Lenovo, Asus, Dell, Sony, Acer, Apple…</p>
+                                <p>Bảo dưỡng xe máy Honda tại Alobike được thực hiện theo quy trình tiêu chuẩn chính hãng đảm bảo cho xe phục hồi về trạng thái tốt nhất, xe ổn định và vận hành tốt trong suốt thời gian sử dụng sau đó. Phụ tùng thay thế và
+                                    các dịch vụ đi kèm sẽ được bảo hành tận nơi bởi đội kỹ thuật chuyên nghiệp. Sau bảo dưỡng tổng thể xe của bạn sẽ tiếp tục được hưởng chế độ bảo trì cơ bản miễn phí tại Alobike</p>
 
-                                <p>Trải qua quá trình 10 năm hình thành và phát triển, hệ thống chi nhánh của Sửa chữa
-                                    Laptop 51 đã có mặt trên khắp địa bàn Hà Nội như Thái Hà, Cầu Giấy, Lương Thế Vinh,
-                                    Nhổn, Lê Thanh Nghị, Lý Nam Đế, Cổ Nhuế, Hà Đông. Đồng thời, mở rộng hoạt động trên
-                                    toàn
-                                    miền Bắc với các cơ sở tại Hải Phòng, Thái Nguyên… Đặc biệt, trung tâm Sửa chữa
-                                    Laptop
-                                    51 đã chính thức "Nam tiến" khi thành lập 2 chi nhánh của mình tại số 283/45 Đường
-                                    CMT8
-                                    - Phường 12 - Quận 10 - TP.HCM và 222 Nguyễn Thái Sơn - Phường 4 - Quận Gò Vấp -
-                                    TP.HCM;
-                                    giúp đáp ứng nhu cầu liên tục của toàn bộ khách hàng phía Nam, nhất là tại TPHCM.
+                                <p>Trải qua quá trình 10 năm hình thành và phát triển, hệ thống chi nhánh của Sửa chữa xe máy đã có mặt trên khắp địa bàn Hà Nội như Thái Hà, Cầu Giấy, Lương Thế Vinh, Nhổn, Lê Thanh Nghị, Lý Nam Đế, Cổ Nhuế, Hà Đông. Đồng
+                                    thời, mở rộng hoạt động trên toàn miền Bắc với các cơ sở tại Hải Phòng, Thái Nguyên… Đặc biệt, trung tâm Sửa chữa xe máy đã chính thức "Nam tiến" khi thành lập 2 chi nhánh của mình tại số 283/45 Đường CMT8 - Phường
+                                    12 - Quận 10 - TP.HCM và 222 Nguyễn Thái Sơn - Phường 4 - Quận Gò Vấp - TP.HCM; giúp đáp ứng nhu cầu liên tục của toàn bộ khách hàng phía Nam, nhất là tại TPHCM.
                                 </p>
                             </div>
                         </div>
@@ -222,7 +200,10 @@
                                             <img src="{{ asset('client') }}/img/team/nhung.png" alt="">
                                         </div>
                                         <div class="team-member-info pt-20">
-                                            <h5 class="member-name"><a href="#">Nguyễn Thị Nhung</a></h5>
+                                            <h5 class="member-name">
+                                                <a href="#">Đỗ Thị Hồng Vân</a>
+                                                <a href="#">Nguyễn Tiến Quang</a>
+                                            </h5>
                                             <p class="member-position"></p>
                                             <p class="mb-20">Thiết kế quản lý tài khoản, làm báo cáo, teseter
                                             </p>
@@ -255,10 +236,9 @@
                                             <img src="{{ asset('client') }}/img/team/mhung.png" alt="">
                                         </div>
                                         <div class="team-member-info pt-20">
-                                            <h5 class="member-name"><a href="#">Hà Mạnh Hùng</a></h5>
+                                            <h5 class="member-name"><a href="#">Hoàng Văn Nam</a></h5>
                                             <p class="member-position">Luồng Chính (Đặt lịch)</p>
-                                            <p class="mb-20">Thiết kế quản lý lịch đặt người dùng và phân chia
-                                                công việc nhân viên</p>
+                                            <p class="mb-20">Thiết kế quản lý lịch đặt người dùng và phân chia công việc nhân viên</p>
                                             <ul class="footer-social">
                                                 <li>
                                                     <a class="facebook" href="#" title="Facebook"><i
@@ -289,7 +269,7 @@
                                             <img src="{{ asset('client') }}/img/team/dung.png" alt="">
                                         </div>
                                         <div class="team-member-info pt-20">
-                                            <h5 class="member-name"><a href="#">Nông Tiến Dũng</a></h5>
+                                            <h5 class="member-name"><a href="#"> Hà Mạnh Sơn</a></h5>
                                             <p class="member-position">Nhánh phụ (Cửa hàng)</p>
                                             <p class="mb-20">Thiết kế quản lý sản phẩm của cửa hàng</p>
                                             <ul class="footer-social">
@@ -322,10 +302,9 @@
                                             <img src="{{ asset('client') }}/img/team/thung.png" alt="">
                                         </div>
                                         <div class="team-member-info pt-20">
-                                            <h5 class="member-name"><a href="#">Lê Thế Hùng</a></h5>
+                                            <h5 class="member-name"><a href="#">Trần Minh Quân</a></h5>
                                             <p class="member-position">UI UX</p>
-                                            <p class="mb-20">Thiết kế quản trị tin tức, ghép giao diện Client,
-                                                làm slide thuyết trình</p>
+                                            <p class="mb-20">Thiết kế quản trị tin tức, ghép giao diện Client, làm slide thuyết trình</p>
                                             <ul class="footer-social">
                                                 <li>
                                                     <a class="facebook" href="#" title="Facebook"><i
@@ -355,10 +334,9 @@
                                             <img src="{{ asset('client') }}/img/team/hop.png" alt="">
                                         </div>
                                         <div class="team-member-info pt-20">
-                                            <h5 class="member-name"><a href="#">Trần Tuấn Hợp</a></h5>
+                                            <h5 class="member-name"><a href="#">Lê Quốc Việt</a></h5>
                                             <p class="member-position">Trưởng Nhóm</p>
-                                            <p class="mb-20">Thiết kế quản lý thống kê sản phẩm,
-                                                lịch đặt và doanh thu của cửa hàng</p>
+                                            <p class="mb-20">Thiết kế quản lý thống kê sản phẩm, lịch đặt và doanh thu của cửa hàng</p>
                                             <ul class="footer-social">
                                                 <li>
                                                     <a class="facebook" href="#" title="Facebook"><i
