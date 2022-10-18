@@ -61,8 +61,8 @@
                                     hàng. Với giá trị cốt lõi luôn lấy "TẬN TÂM - UY TÍN - CHUYÊN NGHIỆP" đặt lên hàng đầu, quan điểm hoạt động của trung tâm là làm việc nghiêm túc, trách nhiệm, đặt lợi ích khách hàng lên số 1 và hướng tới hợp tác, chia
                                     sẻ cùng các đối tác để đi tới thành công.</p>
 
-                                <p>Bảo dưỡng xe máy Honda tại Alobike được thực hiện theo quy trình tiêu chuẩn chính hãng đảm bảo cho xe phục hồi về trạng thái tốt nhất, xe ổn định và vận hành tốt trong suốt thời gian sử dụng sau đó. Phụ tùng thay thế và
-                                    các dịch vụ đi kèm sẽ được bảo hành tận nơi bởi đội kỹ thuật chuyên nghiệp. Sau bảo dưỡng tổng thể xe của bạn sẽ tiếp tục được hưởng chế độ bảo trì cơ bản miễn phí tại Alobike</p>
+                                <p>Bảo dưỡng xe máy Honda tại FCAR được thực hiện theo quy trình tiêu chuẩn chính hãng đảm bảo cho xe phục hồi về trạng thái tốt nhất, xe ổn định và vận hành tốt trong suốt thời gian sử dụng sau đó. Phụ tùng thay thế và các
+                                    dịch vụ đi kèm sẽ được bảo hành tận nơi bởi đội kỹ thuật chuyên nghiệp. Sau bảo dưỡng tổng thể xe của bạn sẽ tiếp tục được hưởng chế độ bảo trì cơ bản miễn phí tại FCAR</p>
 
                                 <p>Trải qua quá trình 10 năm hình thành và phát triển, hệ thống chi nhánh của Sửa chữa xe máy đã có mặt trên khắp địa bàn Hà Nội như Thái Hà, Cầu Giấy, Lương Thế Vinh, Nhổn, Lê Thanh Nghị, Lý Nam Đế, Cổ Nhuế, Hà Đông. Đồng
                                     thời, mở rộng hoạt động trên toàn miền Bắc với các cơ sở tại Hải Phòng, Thái Nguyên… Đặc biệt, trung tâm Sửa chữa xe máy đã chính thức "Nam tiến" khi thành lập 2 chi nhánh của mình tại số 283/45 Đường CMT8 - Phường
