@@ -39,7 +39,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="normal__breadcrumb__text">
                         <h2>Login</h2>
-                        <p>Welcome to the official Anime blog.</p>
+                        <p>Welcome to the FCAR</p>
                     </div>
                 </div>
             </div>
