@@ -26,6 +26,15 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/util.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/main.css">
+
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('resources') }}/css/style.css" type="text/css">
     <!--===============================================================================================-->
 </head>
 
@@ -114,14 +123,14 @@
     <!--===============================================================================================-->
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/player.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{ asset('resources') }}/js/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('resources') }}/js/bootstrap.min.js"></script>
+    <script src="{{ asset('resources') }}/js/player.js"></script>
+    <script src="{{ asset('resources') }}/js/jquery.nice-select.min.js"></script>
+    <script src="{{ asset('resources') }}/js/mixitup.min.js"></script>
+    <script src="{{ asset('resources') }}/js/jquery.slicknav.js"></script>
+    <script src="{{ asset('resources') }}/js/owl.carousel.min.js"></script>
+    <script src="{{ asset('resources') }}/js/main.js"></script>
 
 </body>
 
