@@ -10,9 +10,9 @@
 
 <body>
     <div>
-        <h2 style="text-align: center">Gara ô tô FCar</h2>
+        <h2 style="text-align: center">Sửa chữa xe máy F-Bike</h2>
         <h3 style="text-align: center">Địa chỉ: Số 1 Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</h3>
-        <p style="text-align: right"><i>Hotline:</i> 0399958700</p>
+        <p style="text-align: right"><i>Hotline:</i> 0385537286</p>
         <h2 style="text-align: center">GIẤY HẸN</h2>
         <p style="text-align: center"><i>Mã phiếu: <b>{{ $booking_detail->code }}</b></i></p>
         <div style="font-size: 20px">
@@ -23,7 +23,7 @@
             {{-- Địa chỉ{{ $booking_detail->booking->address }} --}}
             <br>
             <div style="display: inline-block;">
-                <div><b>Tên máy:</b> {{ $booking_detail->name_car }} </div><br>
+                <div><b>Tên xe máy:</b> {{ $booking_detail->name_car }} </div><br>
                 <div><span><b style="padding-left: 50px">Hãng
                             máy:</b>
                         {{
@@ -33,7 +33,7 @@
             $booking_detail->created_at
             }}
             <br><br>
-            <b>Tình trạng máy:</b> {!! $booking_detail->comment !!}
+            <b>Tình trạng xe:</b> {!! $booking_detail->comment !!}
         </div><br><br>
 
         <div style="display:flex ; margin-bottom: 40px;font-size: 20px">

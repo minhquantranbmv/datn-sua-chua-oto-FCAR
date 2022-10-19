@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fcar</title>
+    <title>Sửa chữa xe máy F-Bike</title>
     @include('layout_client.style')
 </head>
 
@@ -41,7 +41,7 @@
 
                                     </div>
                                     <div class="col-lg-6">
-                                        <h3><b>Tên máy: </b>
+                                        <h3><b>Tên xe máy: </b>
                                             {{ $booking_detail->name_car }}</h3>
                                         <h3><b>Hãng máy:</b>
                                             {{ $booking_detail->carCompany->company_name }}</h3>

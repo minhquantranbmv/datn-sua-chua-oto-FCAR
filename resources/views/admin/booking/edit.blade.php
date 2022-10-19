@@ -171,14 +171,14 @@
     <div class="row">
       {{-- <h5 class="mx-auto">Máy 1</h5> --}}
       <div class="form-group col">
-        <label for="">Tên máy tính</label>
+        <label for="">Tên xe</label>
         <input type="text" class="form-control" name="name_car" value="{{ $booking_detail->name_car }}" id=""
           aria-describedby="" placeholder="">
         {{-- <small id="" class="form-text text-muted">Help text</small> --}}
       </div>
       <div class="col">
         <div class="form-group">
-          <label for="">Hãng máy tính</label>
+          <label for="">Hãng xe</label>
 
           <select class="form-control" name="company_car_id" id="">
             @foreach ($cars as $item)

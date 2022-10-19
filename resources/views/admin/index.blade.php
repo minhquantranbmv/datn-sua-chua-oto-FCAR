@@ -35,7 +35,7 @@
                         <i class="ion ion-bag"></i>
                     </div>
                     @can('list-category')
-                    {{-- <a href="{{ route('CompanyComputer.index') }}" class="small-box-footer">Chi tiết <i
+                    {{-- <a href="{{ route('CompanyCar.index') }}" class="small-box-footer">Chi tiết <i
                             class="fas fa-arrow-circle-right"></i></a> --}}
                     @endcan
                 </div>
@@ -100,7 +100,7 @@
                 <div class="small-box bg-info">
                     <div class="inner">
                         <h3 id='total_danh_muc_linh_kien'>{{ $total_category_component }}</h3>
-                        <p>Danh mục linh kiện</p>
+                        <p>Danh mục phụ tùng</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
@@ -117,7 +117,7 @@
                 <div class="small-box bg-success">
                     <div class="inner">
                         <h3 id='total_linh_kien'>{{ $total_component }}</h3>
-                        <p>Linh kiện</p>
+                        <p>Phụ Tùng</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>

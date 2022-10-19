@@ -43,9 +43,9 @@
 
 <body style="max-width: 1024px;">
     <div>
-        <h2 style="text-align: center">CỬA HÀNG LAPTOP51</h2>
+        <h2 style="text-align: center">Sửa chữa xe máy F-Bike</h2>
         <h3 style="text-align: center">Địa chỉ: Số 1 Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</h3>
-        <p style="text-align: right"><i>Hotline:</i> 0399958700</p>
+        <p style="text-align: right"><i>Hotline:</i> 0385537286</p>
         {{-- <h2 style="text-align: center">GIẤY HẸN</h2> --}}
         <h4 style="text-align: center">HÓA ĐƠN SỬA CHỮA</h4>
         <p style="text-align: center"><i>Mã hóa đơn: <b>{{ $booking_detail->code }}</b></i></p>
@@ -56,8 +56,8 @@
             {{--
         </div>
         <div class="row"> --}}
-            <p class="col-3"> <b> Tên máy: </b>{{ $booking_detail->name_car }}</p>
-            <p class="col-3"> <b> Kiểu máy: </b>{{ $booking_detail->carCompany->company_name }}</p>
+            <p class="col-3"> <b> Tên xe máy: </b>{{ $booking_detail->name_car }}</p>
+            <p class="col-3"> <b> Hãng xe: </b>{{ $booking_detail->carCompany->company_name }}</p>
         </div>
         {{-- <p>Hãng máy: {{ $booking_detail->computerCompany->company_name }}</p> --}}
 
@@ -67,7 +67,7 @@
             <thead>
                 <tr>
                     <th>STT</th>
-                    <th>Tên linh kiện</th>
+                    <th>Tên phụ tùng</th>
                     <th>Đơn giá</th>
                     <th>Số lượng</th>
                     <th>Thành tiền</th>
@@ -107,7 +107,7 @@
         {{-- Mô tả sửa chữa: {{ $data }} --}}
         <p style="font-size: 13px">Xin cám ơn quý khách đã sử dụng dịch vụ sửa chữa của chúng tôi. Nếu có bất cứ thắc
             mắc hay vấn đề gì xin quý
-            khách vui lòng liên hệ <i>SDT: 0399958700</i> </p>
+            khách vui lòng liên hệ <i>SDT: 0385537286</i> </p>
 
 
 

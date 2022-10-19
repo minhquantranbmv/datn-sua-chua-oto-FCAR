@@ -35,9 +35,9 @@
             </div>
             <div class="col-3">
                 <div class="form-group">
-                    <select name="companyComputer_id" class="form-control ">
+                    <select name="companyCar_id" class="form-control ">
                         <option value="0">Hãng máy</option>
-                        @foreach($ComputerCompany as $com)
+                        @foreach($CarCompany as $com)
                         <option value="{{$com->id}}">{{$com->company_name}}</option>
                         @endforeach
                     </select>
@@ -103,7 +103,7 @@
                             <td>{{ ($products->currentPage() - 1) * $products->perPage() + $loop->iteration }}</td>
                             <td style="max-width: 350px;">{{ $item->name }}</td>
                             <td>
-                                {{ $item->companyComputer->company_name }}
+                                {{ $item->companyCar->company_name }}
                             </td>
 
 

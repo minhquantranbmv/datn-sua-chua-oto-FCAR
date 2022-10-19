@@ -137,9 +137,9 @@ class BookingController extends Controller
          'email.email' => 'Email không hợp lệ',
          'email.regex' => 'Email không hợp lệ',
          'date.required' => 'Vui lòng chọn ngày đem máy đến',
-         'name_car.required' => 'Vui lòng nhập tên máy',
-         'company_car_id.required' => 'Vui lòng chọn hãng máy',
-         'interval.required' => 'Vui lòng chọn khung giờ đem máy đến',
+         'name_car.required' => 'Vui lòng nhập tên xe',
+         'company_car_id.required' => 'Vui lòng chọn hãng xe',
+         'interval.required' => 'Vui lòng chọn khung giờ đem xe máy đến',
          // 'company_computer_id.required' => 'Bạn phải nhập tên',
 
       ]);
