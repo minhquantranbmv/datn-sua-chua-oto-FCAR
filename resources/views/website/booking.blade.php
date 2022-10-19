@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    @if (Session::has('msg'))
-    {!! Session::get('msg') !!}
-    @endif
+    @if (Session::has('msg')) {!! Session::get('msg') !!} @endif
     <div class="wrapper">
 
         <!-- START HEADER AREA -->
@@ -26,7 +24,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumbs-inner">
-                                <h1 class="breadcrumbs-title">Đặt Lịch Sửa Chữa Laptop</h1>
+                                <h1 class="breadcrumbs-title">Đặt Lịch Sửa Chữa Ô Tô</h1>
                                 <ul class="breadcrumb-list">
                                     <li><a href="index.html">Trang Chủ</a></li>
                                     <li>Đặt Lịch</li>
@@ -52,46 +50,35 @@
                                     @csrf
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <h4 class="blog-section-title border-left mb-30">Vui lòng nhập đầy đủ và
-                                                chính xác thông tin của bạn</h4>
+                                            <h4 class="blog-section-title border-left mb-30">Vui lòng nhập đầy đủ và chính xác thông tin của bạn</h4>
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="">Họ và Tên</label>
                                             <font color="red">*</font>
-                                            <input type="text" name="full_name" value="{{ old('full_name') }}"
-                                                placeholder="Họ tên">@error('full_name')
-                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
+                                            <input type="text" name="full_name" value="{{ old('full_name') }}" placeholder="Họ tên">@error('full_name')
+                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="">Email</label>
                                             <font color="red">*</font>
-                                            <input type="text" name="email" value="{{ old('email') }}"
-                                                placeholder="Email">
-                                            @error('email')
-                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
+                                            <input type="text" name="email" value="{{ old('email') }}" placeholder="Email"> @error('email')
+                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="">Biển số</label>
                                             <font color="red">*</font>
-                                            <input type="text" value="{{ old('name_car') }}" name="name_car"
-                                                placeholder="Số biển">
-                                            @error('name_car')
-                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
+                                            <input type="text" value="{{ old('name_car') }}" name="name_car" placeholder="Số biển"> @error('name_car')
+                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
 
                                         <div class="col-lg-6">
                                             <label for="">Số điện thoại</label>
                                             <font color="red">*</font>
-                                            <input type="text" value="{{ old('phone') }}" name="phone"
-                                                placeholder="Số điện thoại...">
-                                            @error('phone')
-                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
+                                            <input type="text" value="{{ old('phone') }}" name="phone" placeholder="Số điện thoại..."> @error('phone')
+                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
-                                        {{-- <div class="col-lg-6">
+                                        {{--
+                                        <div class="col-lg-6">
                                             <select name="con_ht">
                                                 <option value="">Hình thức sửa</option>
                                                 <option value="CH">Tại cửa hàng</option>
@@ -112,10 +99,8 @@
                                                 <option value="macbook">AUDI</option>
                                                 <option value="msi">BMW</option>
                                                 <option value="khac">khác...</option>
-                                            </select>
-                                            @error('company_car_id')
-                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
+                                            </select> @error('company_car_id')
+                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="">Khung giờ sửa chữa</label>
@@ -128,27 +113,20 @@
                                                 <option value="4">14h-16h</option>
                                                 <option value="5">16h-18h</option>
                                                 <option value="6">18h-20h</option>
-                                            </select>
-                                            @error('interval')
-                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
+                                            </select> @error('interval')
+                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col">
                                             <label for="">Ngày mang đến</label>
                                             <font color="red">*</font>
-                                            <input type="date" id="date" min="{{ now()->format('Y-m-d') }}" name="date"
-                                                value="{{ old('date') }}" placeholder="Ngày">
-                                            @error('date')
-                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
+                                            <input type="date" id="date" min="{{ now()->format('Y-m-d') }}" name="date" value="{{ old('date') }}" placeholder="Ngày"> @error('date')
+                                            <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-12">
                                             <label for="">Mô tả</label>
-                                            <textarea class="custom-textarea" name="description" id="ckeditor"
-                                                placeholder="Nội dung...">{{ old('description') }}</textarea>
+                                            <textarea class="custom-textarea" name="description" id="ckeditor" placeholder="Nội dung...">{{ old('description') }}</textarea>
 
-                                        </div> <button class="submit-btn-1 mt-30 btn-hover-1" name="btn" value="client"
-                                            type="submit">Đặt
+                                        </div> <button class="submit-btn-1 mt-30 btn-hover-1" name="btn" value="client" type="submit">Đặt
                                             Lịch</button>
                                     </div>
                                     <p class="form-message"></p>
@@ -167,7 +145,8 @@
         <!-- END FOOTER AREA -->
 
         <!-- START QUICKVIEW PRODUCT -->
-        {{-- <div id="quickview-wrapper">
+        {{--
+        <div id="quickview-wrapper">
             <!-- Modal -->
             <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
@@ -182,7 +161,8 @@
                                     <div class="main-image images">
                                         <img alt="" src="img/product/quickview.jpg">
                                     </div>
-                                </div><!-- .product-images -->
+                                </div>
+                                <!-- .product-images -->
 
                                 <div class="product-info">
                                     <h1>Aenean eu tristique</h1>
@@ -204,8 +184,7 @@
                                         </form>
                                     </div>
                                     <div class="quick-desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec
-                                        est tristique auctor. Donec non est at libero.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
                                     </div>
                                     <div class="social-sharing">
                                         <div class="widget widget_socialsharing_widget">
@@ -239,11 +218,16 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div><!-- .product-info -->
-                            </div><!-- .modal-product -->
-                        </div><!-- .modal-body -->
-                    </div><!-- .modal-content -->
-                </div><!-- .modal-dialog -->
+                                </div>
+                                <!-- .product-info -->
+                            </div>
+                            <!-- .modal-product -->
+                        </div>
+                        <!-- .modal-body -->
+                    </div>
+                    <!-- .modal-content -->
+                </div>
+                <!-- .modal-dialog -->
             </div>
             <!-- END Modal -->
         </div> --}}
@@ -255,15 +239,9 @@
     <script>
         CKEDITOR.replace('description');
     </script>
-    {{-- <strong>Thông báo: </strong>{{ Session::get('msg') }}. --}}
-    @if (Session::has('msg'))
-    {{ Session::get('msg') }}
-    @endif
-    {{-- <script>
+    {{-- <strong>Thông báo: </strong>{{ Session::get('msg') }}. --}} @if (Session::has('msg')) {{ Session::get('msg') }} @endif {{--
+    <script>
         alert('Đặt lịch thành công');
-
-		
-
     </script> --}}
 
     <script src="//cdn.ckeditor.com/4.18.0/basic/ckeditor.js"></script>

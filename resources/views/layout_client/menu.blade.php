@@ -24,8 +24,7 @@
                                     Xác minh tài khoản
                                 </a>
                             </li>
-                            @endif
-                            @if(Auth::user()->id_role == 1)
+                            @endif @if(Auth::user()->id_role == 1)
                             <li>
                                 <a href="{{ asset('') }}admin">
                                     Quản trị
@@ -93,7 +92,7 @@
                                     </button>
 
                                     <div class="top-search-box">
-                                        <input type="text" placeholder="Tìm kiếm laptop..." name='timkiem' id="timkiem">
+                                        <input type="text" placeholder="Nhập từ khóa cần tìm kiếm..." name='timkiem' id="timkiem">
                                         <button type="button" id='btn-timkiem'>
                                             <i class="zmdi zmdi-search"></i>
                                         </button>
@@ -113,95 +112,6 @@
                                             </span>
                                         </a>
                                     </div>
-                                    <!-- <ul>
-                                        <li>
-                                            <div class="top-cart-inner your-cart">
-                                                <h5 class="text-capitalize">Giỏ Hàng</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="total-cart-pro"> -->
-                                    <!-- single-cart -->
-                                    <!-- <div class="single-cart clearfix">
-                                                    <div class="cart-img f-left">
-                                                        <a href="#">
-                                                            <img src="{{ asset('client') }}/img/cart/1.jpg"
-                                                                alt="Cart Product" />
-                                                        </a>
-                                                        <div class="del-icon">
-                                                            <a href="#">
-                                                                <i class="zmdi zmdi-close"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-info f-left">
-                                                        <h6 class="text-capitalize">
-                                                            <a href="#">Dummy Product Name</a>
-                                                        </h6>
-                                                        <p>
-                                                            <span>Brand <strong>:</strong></span>Brand Name
-                                                        </p>
-                                                        <p>
-                                                            <span>Model <strong>:</strong></span>Grand s2
-                                                        </p>
-                                                        <p>
-                                                            <span>Color <strong>:</strong></span>Black, White
-                                                        </p>
-                                                    </div>
-                                                </div> -->
-                                    <!-- single-cart -->
-                                    <!-- <div class="single-cart clearfix">
-                                                    <div class="cart-img f-left">
-                                                        <a href="#">
-                                                            <img src="{{ asset('client') }}/img/cart/1.jpg"
-                                                                alt="Cart Product" />
-                                                        </a>
-                                                        <div class="del-icon">
-                                                            <a href="#">
-                                                                <i class="zmdi zmdi-close"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-info f-left">
-                                                        <h6 class="text-capitalize">
-                                                            <a href="#">Dummy Product Name</a>
-                                                        </h6>
-                                                        <p>
-                                                            <span>Brand <strong>:</strong></span>Brand Name
-                                                        </p>
-                                                        <p>
-                                                            <span>Model <strong>:</strong></span>Grand s2
-                                                        </p>
-                                                        <p>
-                                                            <span>Color <strong>:</strong></span>Black, White
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="top-cart-inner subtotal">
-                                                <h4 class="text-uppercase g-font-2">
-                                                    Tổng =
-                                                    <span>500.00 VND</span>
-                                                </h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="top-cart-inner view-cart">
-                                                <h4 class="text-uppercase">
-                                                    <a href="{{ asset('') }}gio-hang">Chi Tiết Giỏ hàng</a>
-                                                </h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="top-cart-inner check-out">
-                                                <h4 class="text-uppercase">
-                                                    <a href="{{ asset('') }}thanh-toan">Thanh Toán</a>
-                                                </h4>
-                                            </div>
-                                        </li>
-                                    </ul> -->
                                 </div>
                             </div>
                         </div>
