@@ -7,7 +7,7 @@
     <div class="card row">
         <div class="col-6">
             <div class="form-group mt-2">
-                <label for="">Tên thuộc tính linh kiện</label>
+                <label for="">Tên thuộc tính phụ tùng</label>
                 <input type="text" name="name_category" value="{{old('name_category')}}" class="form-control"
                     placeholder="">
             </div>

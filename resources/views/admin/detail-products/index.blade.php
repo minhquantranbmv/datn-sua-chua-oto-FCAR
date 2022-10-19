@@ -36,8 +36,8 @@
                                 <label for="">Hãng</label>
                                 <select name="product_id" class="form-control">
                                     <option value="">Tất cả</option>
-                                    @foreach ($ComputerCompany as $item)
-                                    <option @if ($item->id == $searchData['companyComputer_id']) selected @endif
+                                    @foreach ($CarCompany as $item)
+                                    <option @if ($item->id == $searchData['companyCar_id']) selected @endif
                                         value="{{ $item->id }}">{{ $item->company_name }}</option>
                                     @endforeach
                                 </select>

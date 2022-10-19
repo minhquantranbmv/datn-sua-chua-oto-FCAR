@@ -30,7 +30,7 @@
                         <th>Ảnh</th>
                         <th>
                             @can('add-category')
-                            <a class="btn btn-sm btn-info" href="{{route('CompanyComputer.add')}}">Thêm</a>
+                            <a class="btn btn-sm btn-info" href="{{route('CompanyCar.add')}}">Thêm</a>
                             @endcan
                         </th>
                     </thead>
@@ -43,7 +43,7 @@
                             <td>
                                 @can('edit-category')
 
-                                <a href="{{ route('CompanyComputer.edit', ['id' => $item->id]) }}"
+                                <a href="{{ route('CompanyCar.edit', ['id' => $item->id]) }}"
                                     class="btn btn-sm btn-warning">Sửa</a>
                                 @endcan
                                 @can('delete-category')
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-                                    <a href="{{ route('CompanyComputer.remove', $item->id) }}" class="btn btn-danger">Xóa</a>
+                                    <a href="{{ route('CompanyCar.remove', $item->id) }}" class="btn btn-danger">Xóa</a>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-center pt-3">
-                    {{$CompanyComputer->links()}}
+                    {{$CompanyCar->links()}}
 
                 </div>
             </div>

@@ -29,7 +29,7 @@
             <a href="/" class="brand-link text-center">
                 {{-- <img src="{{'/public/adminlte/'}}dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
-                <span class="brand-text font-weight-light ">Laptop 51</span>
+                <span class="brand-text font-weight-light ">F-Bike</span>
             </a>
 
             <!-- Sidebar -->
@@ -67,7 +67,7 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-<strong>Copyright &copy; Đặt lịch sửa chữa và quản lí cửa hàng Laptop 51</strong>
+<strong>Copyright &copy; Đặt lịch sửa chữa và quản lí F-Bike</strong>
        
         <div class="float-right d-none d-sm-inline-block">
          

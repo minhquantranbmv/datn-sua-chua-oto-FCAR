@@ -1,5 +1,5 @@
 Xin chào {{ $booking_detail->booking->full_name }} <br><br>
-Máy của bạn đã sửa xong vui lòng thu xếp thời gian đến của hàng nhận máy <br>
+Xe của bạn đã sửa xong vui lòng thu xếp thời gian đến của hàng nhận xe máy <br>
 Thông tin hóa đơn <br>
 
 
@@ -51,9 +51,9 @@ Thông tin hóa đơn <br>
 
 <body style="max-width: 1024px;">
     <div>
-        <h2 style="text-align: center">CỬA HÀNG LAPTOP51</h2>
+        <h2 style="text-align: center">SỬA CHỮA XE MÁY F-BIKE</h2>
         <h3 style="text-align: center">Địa chỉ: Số 1 Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</h3>
-        <p style="text-align: right"><i>Hotline:</i> 0399958700</p>
+        <p style="text-align: right"><i>Hotline:</i> 0385537286</p>
         {{-- <h2 style="text-align: center">GIẤY HẸN</h2> --}}
         <h4 style="text-align: center">HÓA ĐƠN SỬA CHỮA</h4>
         <p style="text-align: center"><i>Mã hóa đơn: <b>{{ $booking_detail->code }}</b></i></p>
@@ -64,10 +64,10 @@ Thông tin hóa đơn <br>
             {{--
         </div>
         <div class="row"> --}}
-            <p class="col-3"> <b> Tên máy: </b>{{ $booking_detail->name_computer }}</p>
-            <p class="col-3"> <b> Kiểu máy: </b>{{ $booking_detail->computerCompany->company_name }}</p>
+            <p class="col-3"> <b> Tên xe: </b>{{ $booking_detail->name_car }}</p>
+            <p class="col-3"> <b>  Hãng xe: </b>{{ $booking_detail->carCompany->company_name }}</p>
         </div>
-        {{-- <p>Hãng máy: {{ $booking_detail->computerCompany->company_name }}</p> --}}
+        {{-- <p>Hãng máy: {{ $booking_detail->carCompany->company_name }}</p> --}}
 
         <h5>DANH SÁCH SỬA CHỮA VÀ THAY THẾ</h5>
 
@@ -116,7 +116,7 @@ Thông tin hóa đơn <br>
         {{-- Mô tả sửa chữa: {{ $data }} --}}
         <p style="font-size: 13px">Xin cám ơn quý khách đã sử dụng dịch vụ sửa chữa của chúng tôi. Nếu có bất cứ thắc
             mắc hay vấn đề gì xin quý
-            khách vui lòng liên hệ <i>SDT: 0399958700</i> </p>
+            khách vui lòng liên hệ <i>SDT: 0385537286</i> </p>
 
 
 
@@ -156,5 +156,5 @@ Thông tin hóa đơn <br>
 
 
 <br>
-Cảm ơn bạn đã tin tưởng Laptop 51!
+Cảm ơn bạn đã tin tưởng !
 Kính chúc bạn một ngày tốt lành!

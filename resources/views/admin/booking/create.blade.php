@@ -75,11 +75,11 @@
     </div>
   </div>
   <div class=" border border-success col-6" id="form_may">
-    <h3 class="text-center fw-bold"><b>THÔNG TIN MÁY</b></h3>
+    <h3 class="text-center fw-bold"><b>THÔNG TIN XE MÁY</b></h3>
     <div class="row">
       {{-- <h5 class="mx-auto">Máy 1</h5> --}}
       <div class="form-group col-6">
-        <label for="">Tên máy tính</label>
+        <label for="">Tên xe</label>
         <input type="text" class="form-control" value="{{ old('name_car') }}" name="name_car" id=""
           aria-describedby="" placeholder="">
         @error('name_car')
@@ -87,7 +87,7 @@
         @enderror</small>
       </div>
       <div class="form-group col-6">
-        <label for="">Loại máy tính</label>
+        <label for="">Loại xe</label>
 
         <select class="form-control" name="company_car_id" id="">
           @foreach ($cars as $item)
