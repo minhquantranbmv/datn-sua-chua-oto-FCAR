@@ -1,90 +1,136 @@
 <!DOCTYPE html>
-
-<html>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<html lang="en">
 
 <head>
+    <title>Xí nghiệp Fcar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/bootstrap/{{ asset('client') }}/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/fonts/font-awesome-4.7.0/{{ asset('client') }}/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/fonts/iconic/{{ asset('client') }}/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/animsition/{{ asset('client') }}/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/util.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/main.css">
 
-    <title>Bệnh Viện Laptop 51</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <script>
-    if (window.performance.navigation.type === 2) {
-        location.reload();
-    }
-    </script>
-    @include('layout_client.style')
-
-
+    <link rel="stylesheet" href="{{ asset('css') }}/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/plyr.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/style.css" type="text/css">
+    <!--===============================================================================================-->
 </head>
 
 <body>
 
-    @include('layout_client.menu')
-    <h1 style="padding: 55px 0 55px;" class="breadcrumbs-title">Đăng nhập</h1>
-    <div class="login-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 pb-5">
-                    <div class="registered-customers">
 
-                        @if (Session::has('message'))
-                        <div class="alert alert-success" role="alert">
-                            {{ Session::get('message') }}
-                        </div>
-                        @endif
-                        <form method="POST" action="{{route('login')}}">
-                            @csrf
-                            <div class="login-account p-30 box-shadow">
-                                <p>Bạn chưa có tài khoản? <a href="/register"> Nhấp vào đây để đăng ký!</a></p>
-                                <input type="text" class="@error('phone') is-invalid @enderror mb-0 mt-4"
-                                    value="{{ old('phone') }}" name="phone" placeholder="Số điện thoại">
-                                @error('phone')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                                <input type="password" name="password" class="mb-0 mt-4 upassword"
-                                    placeholder="Mật khẩu">
-                                @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                                <div class="row">
-                                    <div class="d-inline">
-                                        <input type="checkbox" id="show-password">
-                                        <small for="show-password">Hiện mật khẩu</small>
-                                        <small class="d-inline f-right"><a href="/forget-password">Bạn quên mật
-                                                khẩu?</a></small>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-md-6">
-                                        <button class="submit-btn-1 btn-hover-1" type="submit">Đăng nhập</button>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="/login-otp" class="btn-hover-1 f-right" type="reset">Đăng nhâp bằng
-                                            OTP</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+    <!-- Normal Breadcrumb Begin -->
+    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="normal__breadcrumb__text">
+                        <h2>Login</h2>
+                        <p>Welcome to the FCAR</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
+    </section>
+    <!-- Normal Breadcrumb End -->
 
-    @include('layout_client.script')
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-    </script>
+    <!-- Login Section Begin -->
+    <section class="login spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="login__form">
+                        <h3>Login</h3>
+                        <form action="#">
+                            <div class="input__item">
+                                <input type="text" placeholder="Email address">
+                                <span class="icon_mail"></span>
+                            </div>
+                            <div class="input__item">
+                                <input type="text" placeholder="Password">
+                                <span class="icon_lock"></span>
+                            </div>
+                            <button type="submit" class="site-btn">Login Now</button>
+                        </form>
+                        <a href="#" class="forget_pass">Forgot Your Password?</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="login__register">
+                        <h3>Dont’t Have An Account?</h3>
+                        <a href="#" class="primary-btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login__social">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="login__social__links">
+                            <span>or</span>
+                            <ul>
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With
+                                Facebook</a></li>
+                                <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Login Section End -->
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="{{ asset('client') }}/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('client') }}/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('client') }}/vendor/bootstrap/js/popper.js"></script>
+    <script src="{{ asset('client') }}/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('client') }}/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('client') }}/vendor/daterangepicker/moment.min.js"></script>
+    <script src="{{ asset('client') }}/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="{{ asset('client') }}/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+
+
+    <!-- <script src="{{ asset('css') }}/js/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('css') }}/js/bootstrap.min.js"></script>
+    <script src="{{ asset('css') }}/js/player.js"></script>
+    <script src="{{ asset('css') }}/js/jquery.nice-select.min.js"></script>
+    <script src="{{ asset('css') }}/js/mixitup.min.js"></script>
+    <script src="{{ asset('css') }}/js/jquery.slicknav.js"></script>
+    <script src="{{ asset('css') }}/js/owl.carousel.min.js"></script>
+    <script src="{{ asset('css') }}/js/main.js"></script> -->
 
 </body>
 
