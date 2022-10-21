@@ -113,13 +113,20 @@
                                                 <option value="4">14h-16h</option>
                                                 <option value="5">16h-18h</option>
                                                 <option value="6">18h-20h</option>
-                                            </select> @error('interval')
+                                            </select> 
+                                            @if(Session::has('error'))
+                                            <p class="login-box-msg text-danger">{{Session::get('error')}}</p>
+                                            @endif
+                                            @error('interval')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col">
                                             <label for="">Ngày mang đến</label>
                                             <font color="red">*</font>
                                             <input type="date" id="date" min="{{ now()->format('Y-m-d') }}" name="date" value="{{ old('date') }}" placeholder="Ngày"> @error('date')
+                                            @if(Session::has('error'))
+                                            <p class="login-box-msg text-danger">{{Session::get('error')}}</p>
+                                            @endif
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-12">
