@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
 
 <head>
 
@@ -12,9 +13,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <script>
-    if (window.performance.navigation.type === 2) {
-        location.reload();
-    }
+        if (window.performance.navigation.type === 2) {
+            location.reload();
+        }
     </script>
     @include('layout_client.style')
 
@@ -33,38 +34,25 @@
                     @endif
                     <form method="POST" action="{{route('register')}}">
                         @csrf
-                        <div class="login-account p-30 box-shadow">
+                        <div class="login-account p-30 box-shadow" style="background-color: black;">
                             <p>Bạn đã có tài khoản? <a href="/login"> Nhấp vào đây để đăng nhập!</a></p>
-                            <input type="text" class="@error('name') is-invalid @enderror mb-0 mt-4"
-                                value="{{ old('name') }}" name="name" placeholder="Họ và tên*">
-                            @error('name')
+                            <input type="text" class="@error('name') is-invalid @enderror mb-0 mt-4" value="{{ old('name') }}" name="name" placeholder="Họ và tên*"> @error('name')
                             <span class="invalid-feedback pb-2" role="alert">
                                 <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                            <input type="text" class="@error('email') is-invalid @enderror mb-0 mt-4"
-                                value="{{ old('email') }}" name="email" placeholder="abc@email.com*">
-                            @error('email')
+                            </span> @enderror
+                            <input type="text" class="@error('email') is-invalid @enderror mb-0 mt-4" value="{{ old('email') }}" name="email" placeholder="abc@email.com*"> @error('email')
                             <span class="invalid-feedback pb-2" role="alert">
                                 <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                            <input type="text" class="@error('phone') is-invalid @enderror mb-0 mt-4"
-                                value="{{ old('phone') }}" name="phone" placeholder="Số điện thoại*">
-                            @error('phone')
+                            </span> @enderror
+                            <input type="text" class="@error('phone') is-invalid @enderror mb-0 mt-4" value="{{ old('phone') }}" name="phone" placeholder="Số điện thoại*"> @error('phone')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                            <input type="password" upassword name="password" placeholder="Mật khẩu*"
-                                class="mb-0 mt-4 upassword">
-                            @error('password')
+                            </span> @enderror
+                            <input type="password" upassword name="password" placeholder="Mật khẩu*" class="mb-0 mt-4 upassword"> @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
-                            <input type="password" name="password_confirmation" placeholder="Nhập lại mật khẩu*"
-                                class="mb-0 mt-4 upassword">
+                            </span> @enderror
+                            <input type="password" name="password_confirmation" placeholder="Nhập lại mật khẩu*" class="mb-0 mt-4 upassword">
                             <div class="row">
                                 <div class="d-inline">
                                     <input type="checkbox" id="show-password">
@@ -73,7 +61,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <button class="submit-btn-1 mt-20 btn-hover-1" type="submit" value="register">Đăng
+                                    <button class="submit-btn-1 mt-20 btn-hover-1" type="submit" value="register" style="background-color: rgb(240, 10, 60);">Đăng
                                         ký</button>
                                 </div>
                             </div>
@@ -84,7 +72,7 @@
         </div>
     </div>
 </div>
-@include('layout_client.script')
+@include('layout_client.footer') @include('layout_client.script')
 <!-- MDB -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
 
