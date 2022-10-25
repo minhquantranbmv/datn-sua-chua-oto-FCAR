@@ -21,7 +21,7 @@
 
 </head>
 @include('layout_client.menu')
-<h1 style="padding: 0 0 25px;" class="breadcrumbs-title">Đăng ký</h1>
+<h1 style="padding: 0 0 25px;" class="breadcrumbs-title">ĐĂNG KÝ</h1>
 <div class="login-section">
     <div class="container">
         <div class="row justify-content-center">
