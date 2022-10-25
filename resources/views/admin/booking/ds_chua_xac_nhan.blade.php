@@ -4,7 +4,7 @@
     <h3 class="text-center">DANH SÁCH ĐẶT LỊCH</h3>
 
 
-    <form action="" class="row ml-3">
+    <form action="" method="GET" class="row ml-3">
 
         {{-- <div class="form-group ">
             <input type="text" class="form-control" @if (!empty($_GET['key_search'])) value="{{ $_GET['key_search'] }}"
@@ -25,12 +25,26 @@
                     value="cancel">Hủy bỏ</option>
             </select>
         </div> --}}
+        <div class="form-group">
+          {{-- <label for="">Tìm kiếm</label> --}}
+          <input type="text"
+            class="form-control" 
+            @if (!empty($_GET['search_booking']))
+                value={{$_GET['search_booking']  }}
+            @else
+                value=""
+            @endif
+            name="search_booking" id="" aria-describedby="helpId" placeholder="Số điện thoại...">
+          {{-- <small id="helpId" class="form-text text-muted">Help text</small> --}}
+        </div>
+        
         <div>
             <button type="submit" class="btn btn-primary">Tất cả</button>
-            <button type="submit" name="status" value="received" class="btn btn-primary">Chưa xác nhận</button>
+            {{-- <button type="submit" name="status" value="received" class="btn btn-primary">Chưa xác nhận</button>
             <button type="submit" name="status" value="latch" class="btn btn-primary">Đã xác nhận</button>
-            <button type="submit" name="status" value="cancel" class="btn btn-primary">Hủy bỏ</button>
+            <button type="submit" name="status" value="cancel" class="btn btn-primary">Hủy bỏ</button> --}}
         </div>
+
     </form>
     <table class="table align-items-center table-flush">
         <thead class="thead-light">

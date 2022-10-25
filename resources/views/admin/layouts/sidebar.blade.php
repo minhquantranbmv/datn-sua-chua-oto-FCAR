@@ -50,7 +50,7 @@
                 <a href="" class="nav-link {{ request()->is('admin/CompanyComputer*') ? 'active ' : '' }}">
                     <i class="nav-icon fas fa-align-justify"></i>
                     <p>
-                        Danh mục sản phẩm
+                        Danh mục sản phẩm mới
                         <i class="fas fa-angle-left right"></i>
 
                         {{-- <span class="badge badge-info right">6</span> --}}

@@ -24,7 +24,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   text-transform: capitalize;
 }
 .main-menu > li > a, .dropdwn li a, .single-mega-item li a {
-   position: relative; 
+   position: relative;
 }
 .main-menu > li > a::before, .dropdwn li a:before, .single-mega-item li a:before {
   background: #ffbf7f none repeat scroll 0 0;
@@ -51,14 +51,15 @@ NOTE: This is Header style file. All Header related style included in this file.
   transition: all 0.3s ease 0s;
 }
 .main-menu > li:hover > a{
-  color: #FF7F00;
-} 
+  color: #ff0b0b;
+  transform: scale(1.2);
+}
 .dropdwn > li:hover > a{
-  color: #ff7f00;
+  color: #000000;
 }
 .single-mega-item > li:hover > a{
   color: #ff7f00;
-} 
+}
 /*dropdwn Style*/
 .dropdwn {
   background: #ffffff none repeat scroll 0 0;
@@ -137,7 +138,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 .single-mega-item li:last-child{
   border-bottom: 0px solid #000;
-} 
+}
 .single-mega-item li a {
   color: #666;
   display: inline-block;
@@ -204,7 +205,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   padding: 22px 0;
 }
  .sticky .main-menu > li:hover > a{
-  color: #FF7F00;
+  color: #0e0d0d;
  }
 
 .logo {
@@ -269,10 +270,10 @@ NOTE: This is Header style file. All Header related style included in this file.
   color: #CCCCCC;
 }
 .top-link > ul.link > li a:hover i {
-  color: #FF7F00;
+  color: red;
 }
 .top-link > ul.link > li a:hover, .top-link > ul.link > li a:focus, .top-link > ul.link > li a:active {
-  color: #FF7F00;
+  color: red;
 }
 
 
@@ -499,7 +500,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 /* ****************
-  header-2 
+  header-2
 ***************** */
 .header-2 {
   left: 0;

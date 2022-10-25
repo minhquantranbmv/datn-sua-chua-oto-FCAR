@@ -14,7 +14,7 @@
             <tr>
               <th scope="col" class="sort" data-sort="name">Họ tên</th>
               <th scope="col" class="sort" data-sort="budget">SDT</th>
-              <th scope="col" class="sort" data-sort="status">Máy tính</th>
+              <th scope="col" class="sort" data-sort="status">Xe</th>
               <th scope="col">Kiểu sửa</th>
               <th scope="col" class="sort" data-sort="completion">Thời gian sửa</th>
               <th scope="col">Trạng thái</th>

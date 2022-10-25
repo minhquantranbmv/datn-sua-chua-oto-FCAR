@@ -6,4 +6,4 @@
 <p> Cảm ơn bạn mua sản phẩm của cửa hàng của chúng tôi</p>
 <small>Liên hệ tới chúng tôi nếu cần hỗ trợ!</small>
 
-<p>LAPTOP51</p>
+<p>F</p>

@@ -88,11 +88,11 @@
                     @enderror
                 </div>
                 <div class="form-group pr-2">
-                    <label for="">Chọn loại máy</label>
-                    <div class=" row">@foreach ($computer_company as $c)
+                    <label for="">Chọn loại xe máy</label>
+                    <div class=" row">@foreach ($car_company as $c)
                         <div class="form-check col-4">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="computer_company_id[]" id=""
+                                <input type="checkbox" class="form-check-input" name="car_company_id[]" id=""
                                     value="{{ $c->id }}">
                                 {{ $c->company_name }}
                             </label>

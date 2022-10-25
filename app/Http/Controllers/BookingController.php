@@ -137,12 +137,38 @@ class BookingController extends Controller
          'email.email' => 'Email không hợp lệ',
          'email.regex' => 'Email không hợp lệ',
          'date.required' => 'Vui lòng chọn ngày đem máy đến',
-         'name_car.required' => 'Vui lòng nhập tên máy',
-         'company_car_id.required' => 'Vui lòng chọn hãng máy',
-         'interval.required' => 'Vui lòng chọn khung giờ đem máy đến',
+         'name_car.required' => 'Vui lòng nhập tên xe',
+         'company_car_id.required' => 'Vui lòng chọn hãng xe',
+         'interval.required' => 'Vui lòng chọn khung giờ đem xe máy đến',
          // 'company_computer_id.required' => 'Bạn phải nhập tên',
 
       ]);
+
+      $nowDate=date('Y-m-d');
+      // dd($now,$request->date);
+      if(strtotime($nowDate)==strtotime($request->date) ){
+         $nowTime=date('H:i:s');
+         if($request->interval==1){
+            $time='10:00:00';
+         }else  if($request->interval==2){
+            $time='12:00:00';
+         }else  if($request->interval==3){
+            $time='14:00:00';
+         }else  if($request->interval==4){
+            $time='16:00:00';
+         }else  if($request->interval==5){
+            $time='18:00:00';
+         }else  if($request->interval==6){
+            $time='20:00:00';
+         }else{
+            $time='22:00:00';
+         }
+      if(strtotime($nowTime)>=strtotime($time)){
+
+         return back()->with('error','Thời gian bạn chọn không hợp lệ');
+      }
+
+      }
 
       // dd($request);
       // $request->input($request);
@@ -559,18 +585,25 @@ class BookingController extends Controller
    }
    public function DanhSachChuaXacNhan()
    {
+     if(!empty($_GET['search_booking'])){
+            $phone=$_GET['search_booking'];
+         }else{$phone='';}
+      // if (!empty($_GET)&&!empty($_GET['search_booking'])) {
+    
+      //    }
+      //    $booking_details = BookingDetail::join('bookings', 'booking_details.booking_id', 'bookings.id')
+      //       ->where('status_repair', null)->where('status_booking', 'like', '%' . $_GET['status'] . '%')
+      //       ->orderBy("bookings.id", 'desc')->paginate(10);
+      // }
+      //  else {
 
-      if (!empty($_GET)) {
+// dd($phone);
          $booking_details = BookingDetail::join('bookings', 'booking_details.booking_id', 'bookings.id')
-            ->where('status_repair', null)->where('status_booking', 'like', '%' . $_GET['status'] . '%')
-            ->orderBy("bookings.id", 'desc')->paginate(10);
-      } else {
+                      ->where('phone','like','%'.$phone.'%')
+   ->where('status_repair', null)->orWhereNull('status_booking')
 
-
-         $booking_details = BookingDetail::join('bookings', 'booking_details.booking_id', 'bookings.id')
-            ->where('status_repair', null)->orWhereNull('status_booking')
             ->orderBy("bookings.id", 'desc')->paginate(10);
-      }
+      
 
 
       return view('admin.booking.ds_chua_xac_nhan', compact('booking_details'));

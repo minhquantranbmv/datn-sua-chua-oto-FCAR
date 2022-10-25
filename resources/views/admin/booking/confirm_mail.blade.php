@@ -6,5 +6,5 @@ Số điện thoại: {{ $phone }}
 {{-- Hình thức sửa: {{ $repair_type=='TN'?'Tại nhà':"Tại cửa hàng" }} <br> --}}
 {{-- Mô tả: {!! $description !!} --}}
 
-Cảm ơn bạn đã tin tưởng Fcar!
+Cảm ơn bạn đã tin tưởng F-Bike!
 Kính chúc bạn một ngày tốt lành!

@@ -1,20 +1,19 @@
 @extends('admin.layouts.main')
-@section('title', 'Sửa thông tin danh mục')
+@section('title', 'Thêm danh mục')
 @section('content')
-
 
 <form action="" method="post" enctype="multipart/form-data">
     @csrf
-    <div class="row">
+  
         <div class="col-6">
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <label for="">Tên danh mục</label>
-                <input type="text" name="company_name" value="{{ old('company_name', $CompanyComputer->company_name) }}"
-                    class="form-control" placeholder="">
-                @error('company_name')
-                <p class="text-danger">{{ $message }}</p>
-                @enderror
+                <input type="text" name="company_name" value="{{ old('company_name') }}" class="form-control"
+                    placeholder="">
             </div>
+            @error('company_name')
+            <p class="text-danger">{{ $message }}</p>
+            @enderror
             <div class="form-group">
                 <label for="">Ảnh</label>
                 <input type="file" name="anh" class="form-control" placeholder="">
@@ -24,15 +23,11 @@
             @enderror
             <div class="mb-2 text-right">
 
-<a href="{{ route('CompanyComputer.index') }}" class="btn btn-danger">Hủy</a>
-&nbsp;
-<button type="submit" class="btn btn-success">Lưu</button>
-</div>
+                <a href="{{ route('CompanyCar.index') }}" class="btn btn-danger">Hủy</a>
+                &nbsp;
+                <button type="submit" class="btn btn-success">Lưu</button>
+            </div>
         </div>
-
-    </div>
 </form>
-
-
 
 @endsection

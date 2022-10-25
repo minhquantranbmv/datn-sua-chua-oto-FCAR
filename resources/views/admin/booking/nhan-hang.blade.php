@@ -3,12 +3,12 @@
 @section('content')
 <div class="mx-auto container border">
 
-    <h3 class="text-center" style=" cx"><b>PHIẾU GIỮ MÁY</b></h3>
+    <h3 class="text-center" style=" cx"><b>PHIẾU GIỮ XE</b></h3>
     <h5 class="text-center"><i>Mã phiếu: <b>{{ $booking_detail->code }}</i></b></h5>
     <label for=""><br><b>Ngày đặt:</b>{{
         $booking_detail->created_at }}</label>
     <div class="form-group">
-        <label for="">Ngày đem máy đến : {{ now(7) }}</label>
+        <label for="">Ngày đem xe đến : {{ now(7) }}</label>
 
     </div>
     <form class="row" target="_blank" action="{{ route('phieu-nhan-may', ['booking_detail_id'=>$booking_detail->id]) }}"
@@ -28,13 +28,13 @@
             {{-- <small id="helpId" class="form-text text-muted">Help text</small> --}}
         </div>
         <div class="form-group col-4">
-            <label for="">Tên máy</label>
+            <label for="">Tên xe</label>
             <input class="form-control" type="text" name="name_car" value="{{ $booking_detail->name_car }}">
             {{-- <small id="helpId" class="form-text text-muted">Help text</small> --}}
         </div>
         <div class="col-4">
             <div class="form-group">
-                <label for="">Hãng máy tính</label>
+                <label for="">Hãng xe</label>
 
                 <select class="form-control" name="company_car_id" id="">
                     @foreach ($cars as $item)

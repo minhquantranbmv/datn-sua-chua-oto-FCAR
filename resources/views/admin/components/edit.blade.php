@@ -26,14 +26,14 @@
                 </div>
                 <div class="form-group">
                     <label for="">Danh mục</label>
-                    <select name="companyComputer_id" class="form-control">
-                        <option value="">Chọn CompanyComputer</option>
-                        @foreach ($ComputerCompany as $item)
-                        <option @if($pro->companyComputer_id == $item->id) selected @endif
+                    <select name="companyCar_id" class="form-control">
+                        <option value="">Chọn CompanyCar</option>
+                        @foreach ($CarCompany as $item)
+                        <option @if($pro->companyCar_id == $item->id) selected @endif
                             value="{{ $item->id }}">{{ $item->company_name }}</option>
                         @endforeach
                     </select>
-                    @error('companyComputer_id')
+                    @error('companyCar_id')
                     <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>

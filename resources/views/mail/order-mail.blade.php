@@ -40,9 +40,9 @@
             </tr>
         </tbody>
     </table>
-    <p>Bạn vui lòng đem máy đến của hàng để đúng thời gian</p>
+    <p>Bạn vui lòng đem xe máy đến của hàng để đúng thời gian</p>
     Địa chỉ: Số 1, Trịnh Văn Bô, Nam Từ Liêm, Hà Nội
-    <p>Số điện thoại: 0399958700</p>
+    <p>Số điện thoại: 0385537286</p>
 </body>
 
 </html>

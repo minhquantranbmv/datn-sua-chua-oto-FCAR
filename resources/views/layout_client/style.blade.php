@@ -1,5 +1,5 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('client') }}/img/logo/logo_sticky1.png">
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('client') }}/img/logo/logo_fcar.jpg">
    
 <!-- All CSS Files -->
 <!-- Bootstrap fremwork main css -->

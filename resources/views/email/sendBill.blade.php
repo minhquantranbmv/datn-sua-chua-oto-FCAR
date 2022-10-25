@@ -10,4 +10,4 @@
 <p> Giá: {{$price}}</p>
 <small>Nếu không phải là bạn, vui lòng liên hệ với chúng tôi!</small>
 
-<p>LAPTOP51</p>
+<p>F</p>
