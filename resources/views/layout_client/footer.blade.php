@@ -21,7 +21,7 @@
                                 <h4 class="footer-title border-left text-black">Về Chúng Tôi</h4>
                                 <ul class="footer-menu">
                                     <li >
-                                        <a href="{{ asset('') }}gioi-thieu" class="text-white hover:text-black"><i class="zmdi zmdi-plus"></i><span>Về FCAR </span></a>
+                                        <a href="{{ asset('') }}gioi-thieu" class="text-white "><i class="zmdi zmdi-plus"></i><span class="b">Về FCAR </span></a>
                                     </li>
                                     <li>
                                         <a href="{{ asset('') }}cua-hang" class="text-white"><i class="zmdi zmdi-plus"></i><span>Mua

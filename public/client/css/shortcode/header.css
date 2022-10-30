@@ -270,10 +270,10 @@ NOTE: This is Header style file. All Header related style included in this file.
   color: #CCCCCC;
 }
 .top-link > ul.link > li a:hover i {
-  color: red;
+  color: rgb(0, 0, 0);
 }
 .top-link > ul.link > li a:hover, .top-link > ul.link > li a:focus, .top-link > ul.link > li a:active {
-  color: red;
+  color: rgb(2, 2, 2);
 }
 
 
