@@ -22,12 +22,12 @@
         <section id="page-content" class="page-wrapper section">
 
             <!-- BY BRAND SECTION START-->
-            <div class="by-brand-section mb-80">
+            <div class="by-brand-section mb-80 ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title text-left mb-40">
-                                <h2 class="uppercase">Các Thương Hiệu</h2>
+                                <h2  class="text-center font-italic" >Các Thương Hiệu</h2>
                             </div>
                             <div class="by-brand-product">
                                 <div class="active-by-brand slick-arrow-2">
@@ -55,13 +55,13 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-title text-left mb-40">
-                                    <h2 class="uppercase">Sản phẩm mới nhất</h2>
+                                    <h2 >Sản phẩm mới nhất</h2>
                                 </div>
                                 <div class="featured-product">
                                     <div class="active-featured-product slick-arrow-2">
                                         @foreach ($productNew as $item)
                                         <?php
-                                        
+
                                         if (!function_exists('currency_format')) {
                                             function currency_format($item, $suffix = ' VNĐ')
                                             {
@@ -107,7 +107,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="section-title text-left mb-40">
-                                    <h2 class="uppercase">Sản Phẩm Bán Chạy</h2>
+                                    <h2 >Sản Phẩm Bán Chạy</h2>
                                 </div>
                             </div>
 
@@ -118,7 +118,7 @@
                                         <!-- product-item start -->
                                         @foreach ($product_hot_sell as $product_hot)
                                         <?php
-                                    
+
                                     if (!function_exists('currency_format')) {
                                         function currency_format($product_hot, $suffix = ' VNĐ')
                                         {
@@ -170,7 +170,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="section-title text-left mb-40">
-                                <h2 class="uppercase">Tin Tức Mới Nhất</h2>
+                                <h2 >Tin Tức Mới Nhất</h2>
                             </div>
                             <div class="blog">
                                 <div class="active-blog">
