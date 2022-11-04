@@ -822,7 +822,7 @@ a.button.extra-small i {
 select[id=con_ht] {
     background: #fff none repeat scroll 0 0;
     border: 1px solid transparent;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
     color: #999999;
     font-size: 13px;
     height: 40px;
@@ -841,7 +841,7 @@ input[type="date"],
 input[type="password"] {
     background: #fff none repeat scroll 0 0;
     border: 1px solid transparent;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
     color: #999999;
     font-size: 13px;
     height: 40px;
@@ -2198,7 +2198,7 @@ textarea:focus {
  **************************************/
 
 .box-shadow {
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 
