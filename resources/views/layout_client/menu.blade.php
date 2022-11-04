@@ -85,21 +85,7 @@
                     <div class="col-lg-2 col-md-8">
                         <div class="search-top-cart  f-right">
                             <!-- header-search -->
-                            <div class="header-search f-left">
-                                <div class="header-search-inner">
-                                    <button class="search-toggle">
-                                        <i class="zmdi zmdi-search"></i>
-                                    </button>
 
-                                    <div class="top-search-box">
-                                        <input type="text" placeholder="Nhập từ khóa cần tìm kiếm..." name='timkiem' id="timkiem">
-                                        <button type="button" id='btn-timkiem'>
-                                            <i class="zmdi zmdi-search"></i>
-                                        </button>
-                                    </div>
-
-                                </div>
-                            </div>
                             <!-- total-cart -->
                             <div class="total-cart f-left">
                                 <div class="total-cart-in">
