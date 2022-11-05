@@ -64,7 +64,7 @@
                     <div class="col-lg-2 col-md-4">
                         <div class="logo">
                             <a href="/">
-                                <img src="{{ asset('client') }}/img/logo/logo_fcar.jpg" alt="main logo" width="90%">
+                                <img src="{{ asset('client') }}/img/logo/logo.jpg" alt="main logo" width="90%">
                             </a>
                         </div>
                     </div>
