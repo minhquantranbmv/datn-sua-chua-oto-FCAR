@@ -128,7 +128,7 @@
                                 <h6 class="widget-title border-left mb-20">Danh mục</h6>
                                 <div id="cat-treeview" class="product-cat">
                                     <ul>
-                                        <li class="open"><a href="#">Laptop</a>
+                                        <li class="open"><a href="#">Xe máy</a>
                                             <ul>
                                                 <li>
                                                     <a @if(session()->get('url_path') == "cua-hang")
