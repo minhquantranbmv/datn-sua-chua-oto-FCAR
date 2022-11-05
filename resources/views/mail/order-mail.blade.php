@@ -15,8 +15,8 @@
 
 <body>
     <p>hi {{ $details['name'] }} </p>
-    <p>Bạn đã đặt hàng thành công tại webiste Laptop51 !</p>
-    {{-- <p>Vui lòng truy cập <a href="{{ route('history') }}"> Laptop 51</a> để xem thêm thông tin</p> --}}
+    <p>Bạn đã đặt hàng thành công tại webiste F-Bike !</p>
+    {{-- <p>Vui lòng truy cập <a href="{{ route('history') }}"> F-Bike</a> để xem thêm thông tin</p> --}}
 
     <table border="1" class="table table-stripped">
         <thead>

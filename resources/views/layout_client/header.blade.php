@@ -10,11 +10,11 @@
                         </div>
                         <div class="slider-info gray-bg">
                             <div class="slider-info-inner">
-                                <h1 class="slider-title-1 text-uppercase text-black-1">Chào mừng đến với FCAR sửa chữa ô tô số 1 khu vực miền bắc</h1>
+                                <h1 class="slider-title-1 text-uppercase text-black-1">Chào mừng đến với F-Bike sửa chữa xe máy số 1 khu vực miền bắc</h1>
                                 <div class="slider-brief text-black-2">
                                     <p>Là một trung tâm được thành lập trong lĩnh vực thương mại và dịch vụ đặt lịch sửa chuwax, tiên phong trong lĩnh vực dịch vụ sửa ô tô và phân phối các linh
-                                        phụ kiện ô tô , máy móc, được liên kết bởi các hãng nổi tiếng như
-                                        TOYOTA, AUDI, BMW, KIA, , Acer…</p>
+                                        phụ kiện xe máy , máy móc, được liên kết bởi các hãng nổi tiếng như
+                                        HONDA, SUZUKI , YAMAHA…</p>
                                 </div>
                                 <a href="{{ asset('') }}dat-lich" class="button extra-small">
                                     <span class="text-uppercase">Đặt lịch ngay</span>
@@ -58,9 +58,9 @@
                                 <h1 class="slider-title-1 text-uppercase text-black-1">Dịch vụ đầy đủ</h1>
                                 <div class="slider-brief text-black-2">
                                     <p>Sở hữu đội ngũ kỹ thuật viên sửa chữa chuyên nghiệp, có tay nghề,
-                                        trình độ cao luôn tận tâm phục vụ khách hàng. Hệ thống Sửa chữa ô tô luôn
+                                        trình độ cao luôn tận tâm phục vụ khách hàng. Hệ thống Sửa chữa xe máy luôn
                                         là địa chỉ uy tín, đáng tin cậy tiếp đón hàng triệu lượt khách hàng tin tưởng
-                                        đến sử dụng dịch vụ ô tô từ khi thành lập đến nay.</p>
+                                        đến sử dụng dịch vụ  từ khi thành lập đến nay.</p>
                                 </div>
                                 <a href="{{ asset('') }}dat-lich" class="button extra-small ">
                                     <span class="text-uppercase">Đặt lịch ngay</span>
