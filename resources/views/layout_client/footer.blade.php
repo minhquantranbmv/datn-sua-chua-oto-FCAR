@@ -7,7 +7,7 @@
                         <div class="col-xl-4 col-lg-5 col-md-5">
                             <div class="single-footer footer-about">
                                 <div class="footer-logo">
-                                    <img src="{{ asset('client') }}/img/logo/logo_fcar.jpg" alt="" width="80%">
+                                    <img src="{{ asset('client') }}/img/logo/logo.jpg" alt="" width="80%">
                                 </div>
                                 <div class="footer-brief">
                                     <p class="text-white">F-BIKE xin gửi lời cảm ơn sâu sắc tới Quý khách hàng đã quan tâm và ủng hộ
