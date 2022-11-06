@@ -40,7 +40,7 @@
                                             Hãng:
                                         </span> -->
                                         <select name="companyCar_id">
-                                            <option value="0">Lọc theo hãng máy</option>
+                                            <option value="0">Lọc theo hãng xe</option>
                                             @foreach($CarCompany as $com)
                                             <option value="{{$com->id}}">{{$com->company_name}}</option>
                                             @endforeach
