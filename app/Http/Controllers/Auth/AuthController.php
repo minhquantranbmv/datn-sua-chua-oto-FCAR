@@ -32,30 +32,30 @@ class AuthController extends Controller
     protected function create(RegisterRequest $request)
     {   
         // Tạo mã xác minh
-        $pool = '0123456789';
-        $code_verify = substr(str_shuffle(str_repeat($pool, 2)), 0, 6);
-        $phoneSend['phone'] = '+84' . $request->phone;
-        /* Get credentials from .env */
-        $twilio_verify_sid = getenv("TWILIO_VERIFY_SID");
-        $token = getenv("TWILIO_AUTH_TOKEN");
-        $twilio_sid = getenv("TWILIO_SID");
-        $twilio_number = getenv("TWILIO_NUMBER");
-        $twilio = new Client($twilio_sid, $token);
-        $twilio->messages->create(
-            $phoneSend['phone'],
-            array(
-                'from' => $twilio_number,
-                'body' => 'Ma xac minh cua ban la: '. $code_verify,
-            )
-            );
-            // Insert mã xác minh
-        DB::table('code_verify')->insert([
-                'code_verify' => $code_verify,
-                'phone_number' => $request->phone,
-                'status' => 0,
-                'time_request' => 0,
-                'created_at' => Carbon::now(),
-            ]);
+        // $pool = '0123456789';
+        // $code_verify = substr(str_shuffle(str_repeat($pool, 2)), 0, 6);
+        // $phoneSend['phone'] = '+84' . $request->phone;
+        // /* Get credentials from .env */
+        // $twilio_verify_sid = getenv("TWILIO_VERIFY_SID");
+        // $token = getenv("TWILIO_AUTH_TOKEN");
+        // $twilio_sid = getenv("TWILIO_SID");
+        // $twilio_number = getenv("TWILIO_NUMBER");
+        // $twilio = new Client($twilio_sid, $token);
+        // $twilio->messages->create(
+        //     $phoneSend['phone'],
+        //     array(
+        //         'from' => $twilio_number,
+        //         'body' => 'Ma xac minh cua ban la: '. $code_verify,
+        //     )
+        //     );
+        //     // Insert mã xác minh
+        // DB::table('code_verify')->insert([
+        //         'code_verify' => $code_verify,
+        //         'phone_number' => $request->phone,
+        //         'status' => 0,
+        //         'time_request' => 0,
+        //         'created_at' => Carbon::now(),
+        //     ]);
             // Tạo tài khoản người dùng
         $user = User::create([
             'name' =>  $request->name,
@@ -64,10 +64,10 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
             'id_role' => 0,
         ]);
-        auth()->login($user);
-        session()->put('phone_verify', $request->phone);
-        Toastr::success('Gửi mã xác minh thành công', 'Thành công');
-        return redirect()->route('verify');
+        // auth()->login($user);
+        // session()->put('phone_verify', $request->phone);
+        Toastr::success('Bạn đã đăng kí thành công', 'Thành công');
+        return redirect()->route('login');
     }
 
     //  Gửi lại mã 

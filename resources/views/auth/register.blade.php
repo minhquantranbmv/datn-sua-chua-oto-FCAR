@@ -146,28 +146,29 @@
                         @csrf
                         <div class="input__item_phone">
                             <input type="text" class="@error('name') is-invalid @enderror mb-0 mt-4" value="{{ old('name') }}" name="name" placeholder="Họ và tên*"> @error('name')
-                            <span class="invalid-feedback pb-2" role="alert">
-                                <strong>{{ $message }}</strong>
+                            <span class="text-danger">
+                                {{ $message }}
                             </span> @enderror
                         </div>
 
                         <div class="input__item_phone" data-validate="Enter password">
                             <input type="text" class="@error('phone') is-invalid @enderror mb-0 mt-4" value="{{ old('phone') }}" name="phone" placeholder="Số điện thoại*"> @error('phone')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
+                            <span class="text-danger">
+                               {{ $message }}
                             </span> @enderror
                         </div>
 
                         <div class="input__item_phone" data-validate="Valid email is: a@b.c">
                             <input type="text" class="@error('email') is-invalid @enderror mb-0 mt-4" value="{{ old('email') }}" name="email" placeholder="abc@email.com*"> @error('email')
-                            <span class="invalid-feedback pb-2" role="alert">
-                                <strong>{{ $message }}</strong>
+                            <span class="text-danger" >
+                                {{ $message }}
                             </span> @enderror
                         </div>
                         <div class="input__item_phone" data-validate="Enter password">
-                            <input type="password" upassword name="password" placeholder="Mật khẩu*" class="mb-0 mt-4 upassword"> @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
+                            <input type="password" upassword name="password" placeholder="Mật khẩu*" class="mb-0 mt-4 upassword"> 
+                            @error('password')
+                            <span class="text-danger">
+                                {{ $message }}
                             </span> @enderror
                         </div>
 
