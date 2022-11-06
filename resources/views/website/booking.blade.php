@@ -104,10 +104,10 @@
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-6">
-                                            <label for="">Khung giờ sửa chữa</label>
+                                            <label for="">Khung giờ nhận xe</label>
                                             <font color="red">*</font>
                                             <select name="interval" id="con_ht">
-                                                {{-- <option hidden value="">Khung giờ sửa chữa</option> --}}
+                                                {{-- <option hidden value="">Khung giờ nhận xe</option> --}}
                                                 <option value="1">8h-10h</option>
                                                 <option value="2">10h-12h</option>
                                                 <option value="3">12h-14h</option>
