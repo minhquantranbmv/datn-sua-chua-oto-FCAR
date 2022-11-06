@@ -231,7 +231,7 @@ class BookingDetailController extends Controller
             ];
             $email = $booking_detail->booking->email;
             Mail::send('admin.mail.coifirm_finish_menber', $data, function ($message) use ($email) {
-                $message->from('manhhung17062001@gmail.com', 'Cửa hàng laptop51');
+                $message->from('manhhung17062001@gmail.com', 'F-BIKE');
                 $message->to($email, 'John Doe');
                 $message->subject('Thông báo sửa máy hoàn thành');
             });
