@@ -6,9 +6,9 @@
                 <div class="col-lg-12">
                     <div class="layer-1">
                         <div class="slider-img">
-                            <img src="{{ asset('client') }}/img/slider/slider-1/hy2.jpg" alt="">
+                            <img src="{{ asset('client') }}/img/slider/slider-1/slide1.jpg" alt="">
                         </div>
-                        <div class="slider-info gray-bg">
+                        <!-- <div class="slider-info gray-bg">
                             <div class="slider-info-inner">
                                 <h1 class="slider-title-1 text-uppercase text-black-1">Chào mừng đến với F-Bike sửa chữa xe máy số 1 khu vực miền bắc</h1>
                                 <div class="slider-brief text-black-2">
@@ -20,7 +20,7 @@
                                     <span class="text-uppercase">Đặt lịch ngay</span>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- layer-1 end -->
@@ -51,9 +51,9 @@
                 <div class="col-lg-12">
                     <div class="layer-1">
                         <div class="slider-img">
-                            <img src="{{ asset('client') }}/img/slider/slider-1/hy1.jpg" alt="">
+                            <img src="{{ asset('client') }}/img/slider/slider-1/slide2.png" alt="">
                         </div>
-                        <div class="slider-info gray-bg">
+                        <!-- <div class="slider-info gray-bg">
                             <div class="slider-info-inner">
                                 <h1 class="slider-title-1 text-uppercase text-black-1">Dịch vụ đầy đủ</h1>
                                 <div class="slider-brief text-black-2">
@@ -66,7 +66,7 @@
                                     <span class="text-uppercase">Đặt lịch ngay</span>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- layer-1 end -->

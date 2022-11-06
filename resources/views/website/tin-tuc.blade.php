@@ -18,15 +18,15 @@
 
         <!-- BREADCRUMBS SETCTION START -->
         <div class="breadcrumbs-section plr-200 mb-80 section">
+            <h1 class="breadcrumbs-title">Tin Tức</h1>
             <div class="breadcrumbs overlay-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumbs-inner">
-                                <h1 class="breadcrumbs-title">Tin Tức</h1>
+                                
                                 <ul class="breadcrumb-list">
-                                    <li><a href="index.html">Trang Chủ</a></li>
-                                    <li>Tin Tức</li>
+
                                 </ul>
                             </div>
                         </div>

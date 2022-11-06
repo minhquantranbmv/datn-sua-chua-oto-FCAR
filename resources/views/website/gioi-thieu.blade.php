@@ -17,16 +17,13 @@
 
         <!-- BREADCRUMBS SETCTION START -->
         <div class="breadcrumbs-section plr-200 mb-80 section">
+            <h1 class="breadcrumbs-title">Giới thiệu về hệ thống Sửa chữa xe máy F-BIKE</h1>
             <div class="breadcrumbs overlay-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumbs-inner">
-                                <h1 class="breadcrumbs-title">Giới thiệu về hệ thống Sửa chữa xe máy F-BIKE</h1>
-                                <ul class="breadcrumb-list">
-                                    <li><a href="index.html">Trang Chủ</a></li>
-                                    <li>Giới Thiệu</li>
-                                </ul>
+                                
                             </div>
                         </div>
                     </div>
