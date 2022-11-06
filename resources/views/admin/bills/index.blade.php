@@ -29,7 +29,7 @@
             <select name="status" class="form-control ">
                 <option value="">Tất cả</option>
                 <option value="Chờ xử lý">Chờ xử lý</option>
-                <option value="Tiếp nhận máy">Tiếp nhận máy</option>
+                <option value="Tiếp nhận xe máy">Tiếp nhận xe máy</option>
                 <option value="Đang chờ sửa">Đang chờ sửa</option>
                 <option value="Đang sửa">Đang sửa</option>
                 <option value="Hoàn thành sửa">Hoàn thành sửa
@@ -96,7 +96,7 @@
                                         <p class="text-info">Chờ xử lý</p>
                                     @elseif($item->booking_detail->status_booking == 'latch')
                                     @if ($item->booking_detail->status_repair == null)
-                                            <p class="text-info">Tiếp nhận máy</p>
+                                            <p class="text-info">Tiếp nhận xe máy</p>
                                         @elseif ($item->booking_detail->status_repair == 'waiting')
                                             <p class="text-info">Đang chờ sửa</p>
                                         @elseif($item->booking_detail->status_repair == 'fixing')
@@ -109,7 +109,7 @@
                                             @endif
                                         @endif
                                     @elseif($item->booking_detail->status_booking == 'received')
-                                        <p class="text-info">Tiếp nhận máy</p>
+                                        <p class="text-info">Tiếp nhận xe máy</p>
                                     @endif
 
                                 </td>

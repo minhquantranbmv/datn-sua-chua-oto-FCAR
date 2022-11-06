@@ -87,7 +87,7 @@
         <form action="{{ route('phieu-nhan-may', ['booking_detail_id'=>$booking_detail->id]) }}" method="POST">
             @csrf
 
-            <h2 class="mx-auto">Phiếu tiếp nhận máy</h2>
+            <h2 class="mx-auto">Phiếu tiếp nhận xe máy</h2>
 
 
         </form>
