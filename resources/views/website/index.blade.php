@@ -23,30 +23,6 @@
 
             <!-- BY BRAND SECTION START-->
             <div class="by-brand-section mb-80 ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title text-left mb-40">
-                                <h2  class="text-center font-italic" >Các Thương Hiệu</h2>
-                            </div>
-                            <div class="by-brand-product">
-                                <div class="active-by-brand slick-arrow-2">
-                                    <!-- single-brand-product start -->
-
-                                    @foreach($CarCompany as $CarCom)
-                                    <div class="brand-item">
-                                        <div class="single-brand-product">
-                                            <a href="/cua-hang/{{$CarCom->id}}"><img
-                                                    src="{{asset($CarCom->logo)}}" width="150" alt=""></a>
-                                        </div>
-
-                                        <!-- single-brand-product end -->
-                                    </div> @endforeach
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><br><br><br>
                 <!-- BY BRAND SECTION END -->
 
                 <!-- FEATURED PRODUCT SECTION START -->
