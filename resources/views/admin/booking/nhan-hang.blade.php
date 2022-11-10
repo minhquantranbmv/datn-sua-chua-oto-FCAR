@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-{{-- @section('title','Phiếu giữ máy') --}}
+{{-- @section('title','Phiếu giữ xe máy') --}}
 @section('content')
 <div class="mx-auto container border">
 
@@ -87,7 +87,7 @@
         <form action="{{ route('phieu-nhan-may', ['booking_detail_id'=>$booking_detail->id]) }}" method="POST">
             @csrf
 
-            <h2 class="mx-auto">Phiếu tiếp nhận xe máy</h2>
+            <h2 class="mx-auto">Phiếu tiếp nhận xe</h2>
 
 
         </form>
