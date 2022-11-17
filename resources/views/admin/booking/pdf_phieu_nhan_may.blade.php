@@ -19,8 +19,7 @@
             {{-- <b>Họ và tên: </b><span>{{ $booking_detail->full_name }}</span> --}}
 
             <b>Họ tên khách hàng:</b> {{$booking_detail->booking->full_name}} <br><br>
-            <b>Số điện thoại:</b> {{$booking_detail->booking->phone}} <br>
-            {{-- Địa chỉ{{ $booking_detail->booking->address }} --}}
+            <b>Số điện thoại:</b> {{$booking_detail->booking->phone}} <br> {{-- Địa chỉ{{ $booking_detail->booking->address }} --}}
             <br>
             <div style="display: inline-block;">
                 <div><b>Tên xe máy:</b> {{ $booking_detail->name_car }} </div><br>
@@ -29,10 +28,9 @@
                         {{
                         $booking_detail->carCompany->company_name}}</span></div>
             </div>
-            <br><b>Ngày đặt:</b>{{ ' '.
-            $booking_detail->created_at
-            }}
+            <br><b>Ngày đặt:</b>{{ ' '. $booking_detail->created_at }}
             <br><br>
+
             <b>Tình trạng xe:</b> {!! $booking_detail->comment !!}
         </div><br><br>
 
