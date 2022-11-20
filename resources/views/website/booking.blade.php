@@ -95,11 +95,11 @@
                                                 @foreach ($company_Car as $item)
                                                 <option value="{{ $item->id }}">{{ $item->company_name }}</option>
                                                 @endforeach
-                                                <option value="hp">KIA</option>
+                                                <!-- <option value="hp">KIA</option>
                                                 <option value="acer">TOYOTA</option>
                                                 <option value="macbook">AUDI</option>
                                                 <option value="msi">BMW</option>
-                                                <option value="khac">khác...</option>
+                                                <option value="khac">khác...</option> -->
                                             </select> @error('company_car_id')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
