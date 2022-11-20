@@ -52,6 +52,7 @@ class BookingDetailController extends Controller
 
             ];
             if (!$list_bill) {
+
                 $data = [
                     'codebill' => $booking_detail->code,
                     'booking_detail_id' => $booking_detail_id,
@@ -76,7 +77,17 @@ class BookingDetailController extends Controller
                     bill_detail::create($data1);
                 }
             } else {
-                $list_bill->fill($data)->save();
+                     $data1 = [
+                'codebill' => $booking_detail->code,
+                'booking_detail_id' => $booking_detail_id,
+                // 'date' => now(),
+                'total_price' => array_sum(array_column($repair_parts->toArray(), 'into_money')),
+                'type' => 2,
+                'status' => 2,
+                'method' => 1,
+
+            ];
+                $list_bill->fill($data1)->save();
             }
         }
 
