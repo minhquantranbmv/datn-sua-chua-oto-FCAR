@@ -36,7 +36,7 @@
             <div class="col-3">
                 <div class="form-group">
                     <select name="companyCar_id" class="form-control ">
-                        <option value="0">Hãng máy</option>
+                        <option value="0">Hãng xe</option>
                         @foreach($CarCompany as $com)
                         <option value="{{$com->id}}">{{$com->company_name}}</option>
                         @endforeach

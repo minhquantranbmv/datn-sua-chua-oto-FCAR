@@ -7,7 +7,7 @@
             <tr>
                 {{-- <th></th> --}}
                 <th scope="col" class="sort" data-sort="name">STT</th>
-                <th scope="col" class="sort" data-sort="name">Tên xe máy</th>
+                <th scope="col" class="sort" data-sort="name">Biển số</th>
                 <th scope="col" class="sort" data-sort="budget">Tên khách hàng</th>
                 <th scope="col" class="sort" data-sort="status">SDT</th>
                 <th scope="col">Nhân viên</th>

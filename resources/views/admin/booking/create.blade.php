@@ -60,7 +60,7 @@
     </div> --}}
     <div class="col-6">
       <div class="form-group">
-        <label for="">Thời gian</label>
+        <label for="">Thời gian mang xe đến</label>
         <select class="form-control" name="interval" id="">
           <option value="1">8h-10h</option>
           <option value="2">10h-12h</option>
@@ -107,7 +107,7 @@
   {{-- <button onclick="AddForm()" type="button" id="btn_themmay">Thêm máy</button> --}}
   <button class="btn btn-success mx-auto container " name="btn" id="" form="form_create" value="admin"
     type="submit">Thêm
-    máy
+    
   </button>
 
 </form>

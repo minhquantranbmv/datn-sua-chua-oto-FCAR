@@ -22,7 +22,7 @@
             <b>Số điện thoại:</b> {{$booking_detail->booking->phone}} <br> {{-- Địa chỉ{{ $booking_detail->booking->address }} --}}
             <br>
             <div style="display: inline-block;">
-                <div><b>Tên xe máy:</b> {{ $booking_detail->name_car }} </div><br>
+                <div><b>Biển số:</b> {{ $booking_detail->name_car }} </div><br>
                 <div><span><b style="padding-left: 50px">Hãng
                             máy:</b>
                         {{

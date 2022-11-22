@@ -35,7 +35,7 @@
                         </th>
                     </thead>
                     <tbody>
-                        @foreach ($CompanyComputer as $item)
+                        @foreach ($CompanyCar as $item)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->company_name }}</td>
