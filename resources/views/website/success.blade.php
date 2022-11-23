@@ -38,15 +38,15 @@
 
                                     {{-- <div>Tên máy: {{ $booking_detail->name_car }}</div> --}}
                                     <div class="col-lg-6">
-                                        <h3><b>Tên máy:</b>
+                                        <h3><b>Biển số:</b>
                                             {{ $booking_detail->name_car }}</h3>
-                                        <h3><b>Hãng máy:</b>
+                                        <h3><b>Hãng xe:</b>
                                             {{ $booking_detail->carCompany->company_name }}</h3>
                                         <h3><b>Khung giờ sửa:</b>
                                             {{ $details['interval'] }}
 
                                         </h3>
-                                        <h3><b>Ngày sửa:</b>
+                                        <h3><b>Ngày mang tới:</b>
                                             {{ $request->date }}</h3>
 
                                     </div>
