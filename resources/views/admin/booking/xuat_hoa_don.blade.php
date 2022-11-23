@@ -55,7 +55,7 @@
             {{--
         </div>
         <div class="row"> --}}
-            <p class="col-3"> <b> Tên xe máy: </b>{{ $booking_detail->name_car }}</p>
+            <p class="col-3"> <b> Biển số: </b>{{ $booking_detail->name_car }}</p>
             <p class="col-3"> <b> Hãng xe: </b>{{ $booking_detail->carCompany->company_name }}</p>
         </div>
         {{--

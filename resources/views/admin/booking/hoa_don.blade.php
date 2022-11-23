@@ -16,7 +16,7 @@
     {{--
     <p><b>Họ và tên:</b> {{ $booking_detail->booking->full_name }}</p> --}}
     <div class="row">
-        <p class="col-3"> <b> Tên xe máy: </b>{{ $booking_detail->name_car }}</p>
+        <p class="col-3"> <b> Biển số: </b>{{ $booking_detail->name_car }}</p>
         <p class="col-3"> <b> Hãng: </b>{{ $booking_detail->carCompany->company_name }}</p>
         <p class="col-3"> <b> Thời gian xuất hóa đơn: </b>{{ $list_bill->date }}</p>
 

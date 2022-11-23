@@ -50,7 +50,7 @@
         <thead class="thead-light">
             <tr>
                 <th scope="col" class="sort" data-sort="name">STT</th>
-                <th scope="col" class="sort" data-sort="name">Tên máy</th>
+                <th scope="col" class="sort" data-sort="name">Biển số</th>
                 <th scope="col" class="sort" data-sort="budget">Tên khách hàng</th>
                 <th scope="col" class="sort" data-sort="status">Số điện thoại</th>
                 <th scope="col">Thời gian</th>
@@ -148,7 +148,7 @@
                         style="display: none"
                         @endif
                         href="{{ route('dat-lich.tiep-nhan-may', ['booking_detail_id'=>$b->id]) }}" role="button">Tiếp
-                        nhận máy</a>
+                        nhận xe</a>
                     @endcan
                     {{-- <a name="" id="" class="btn btn-danger"
                         href="{{ route('dat-lich.deleteBookingDetail', ['id'=>$b->id]) }}" role="button">Xóa</a> --}}

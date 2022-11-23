@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label for="">Danh mục</label>
                     <select name="companyCar_id" class="form-control">
-                        <option value="">Chọn CompanyCar</option>
+                        <option value="">Chọn </option>
                         @foreach ($CarCompany as $item)
                         <option @if(old('companyCar_id') == $item->id) selected @endif value="{{ $item->id }}">{{ $item->company_name }}</option>
                         @endforeach
@@ -66,7 +66,7 @@
                     <label for="">Chi tiết sản phẩm</label>
                 </div>
 
-                <div class="form-group row mb-1 pr-2">
+                {{-- <div class="form-group row mb-1 pr-2">
                     <label for="" class="font-italic col-sm-2 col-form-label">CPU:</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" value="{{ old('cpu') }}" name="cpu" id="" placeholder="CPU">
@@ -110,7 +110,7 @@
                     @error('screen')
                     <p class="text-danger">{{ $message }}</p>
                     @enderror
-                </div>
+                </div> --}}
                 <div class="form-group pt-1 pr-2">
                     <label for="">Thời gian bảo hành</label>
                     <select name="insurance" id="" class="form-control">

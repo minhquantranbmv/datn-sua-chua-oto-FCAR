@@ -28,7 +28,7 @@
             {{-- <small id="helpId" class="form-text text-muted">Help text</small> --}}
         </div>
         <div class="form-group col-4">
-            <label for="">Tên xe</label>
+            <label for="">Biển số</label>
             <input class="form-control" type="text" name="name_car" value="{{ $booking_detail->name_car }}">
             {{-- <small id="helpId" class="form-text text-muted">Help text</small> --}}
         </div>

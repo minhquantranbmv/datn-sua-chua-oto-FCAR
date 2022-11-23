@@ -142,7 +142,7 @@
                                         value="{{ $user->phone }}">
                                     <small class="text-danger">Hiện tại chưa cho phép đổi số điện thoại, vui lòng
                                         liên
-                                        hệ 0866491101 để được hỗ trợ</small>
+                                        hệ  để được hỗ trợ</small>
                                     @error('phone')
                                     <p class="text-danger p-0 m-0">{{ $message }}
                                     </p>
