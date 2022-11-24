@@ -160,13 +160,12 @@
 
                         <div class="input__item_phone" data-validate="Valid email is: a@b.c">
                             <input type="text" class="@error('email') is-invalid @enderror mb-0 mt-4" value="{{ old('email') }}" name="email" placeholder="abc@email.com*"> @error('email')
-                            <span class="text-danger" >
+                            <span class="text-danger">
                                 {{ $message }}
                             </span> @enderror
                         </div>
                         <div class="input__item_phone" data-validate="Enter password">
-                            <input type="password" upassword name="password" placeholder="Mật khẩu*" class="mb-0 mt-4 upassword"> 
-                            @error('password')
+                            <input type="password" upassword name="password" placeholder="Mật khẩu*" class="mb-0 mt-4 upassword"> @error('password')
                             <span class="text-danger">
                                 {{ $message }}
                             </span> @enderror
@@ -209,7 +208,7 @@
 <div id="dropDownSelect1"></div>
 
 
-<!-- <h1 style="padding: 0 0 25px;" class="breadcrumbs-title">Đăng ký</h1>
+
 <div class="login-section">
     <div class="container">
         <div class="row justify-content-center">
