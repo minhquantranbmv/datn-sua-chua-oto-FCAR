@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Xí nghiệp Fcar</title>
+    <title>Đăng nhập</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -48,7 +48,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="normal__breadcrumb__text">
                         <h2>Login</h2>
-                        <p>Welcome to the FCAR</p>
+                        <p>Welcome to the FBike</p>
                     </div>
                 </div>
             </div>
