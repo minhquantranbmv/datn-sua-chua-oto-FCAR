@@ -105,8 +105,7 @@
             border: none;
             padding-left: 76px;
         }
-        
-        #show-password {
+        /* #show-password {
             width: 20px;
             height: 20px;
             margin: 15px 20px;
@@ -115,7 +114,7 @@
         #show {
             color: aliceblue;
             font-size: 20px;
-        }
+        } */
     </style>
 </head>
 
@@ -170,29 +169,29 @@
 
 
                             </div>
-                    </div>
-                    <button type="submit" class="site-btn">ĐĂNG NHẬP NGAY</button>
-                    </form>
-                    <a href="/forget-password" class="forget_pass">QUÊN MẬT KHẨU?</a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="login__register">
-                    <h3>KHÔNG CÓ TÀI KHOẢN?</h3>
-                    <a href="/register" class="primary-btn">Đăng KÝ</a>
-                </div>
-            </div>
-        </div>
-        <div class="login__social">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6">
-                    <div class="login__social__links">
-                        <a href="/">Quay lại trang chủ</a>
 
+                            <button type="submit" class="site-btn">ĐĂNG NHẬP NGAY</button>
+                        </form>
+                        <a href="/forget-password" class="forget_pass">QUÊN MẬT KHẨU?</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="login__register">
+                        <h3>KHÔNG CÓ TÀI KHOẢN?</h3>
+                        <a href="/register" class="primary-btn">Đăng KÝ</a>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="login__social">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="login__social__links">
+                            <a href="/">Quay lại trang chủ</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Login Section End -->
@@ -217,14 +216,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
     </script>
 
-    <!-- <script src="{{ asset('css') }}/js/jquery-3.3.1.min.js"></script>
-    <script src="{{ asset('css') }}/js/bootstrap.min.js"></script>
-    <script src="{{ asset('css') }}/js/player.js"></script>
-    <script src="{{ asset('css') }}/js/jquery.nice-select.min.js"></script>
-    <script src="{{ asset('css') }}/js/mixitup.min.js"></script>
-    <script src="{{ asset('css') }}/js/jquery.slicknav.js"></script>
-    <script src="{{ asset('css') }}/js/owl.carousel.min.js"></script>
-    <script src="{{ asset('css') }}/js/main.js"></script> -->
+
 
 </body>
 
