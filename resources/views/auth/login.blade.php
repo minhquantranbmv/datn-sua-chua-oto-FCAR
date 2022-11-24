@@ -168,36 +168,31 @@
                                     <strong class="text-massage-pass">{{ $message }}</strong>
                                 </span> @enderror
 
-                                <div class="row">
-                                    <div class="d-inline">
-                                        <input type="checkbox" id="show-password">
-                                        <small id="show" for="show-password">Hiện mật khẩu</small>
 
-                                    </div>
-                                </div>
                             </div>
-                            <button type="submit" class="site-btn">ĐĂNG NHẬP NGAY</button>
-                        </form>
-                        <a href="/forget-password" class="forget_pass">QUÊN MẬT KHẨU?</a>
                     </div>
+                    <button type="submit" class="site-btn">ĐĂNG NHẬP NGAY</button>
+                    </form>
+                    <a href="/forget-password" class="forget_pass">QUÊN MẬT KHẨU?</a>
                 </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="login__register">
+                    <h3>KHÔNG CÓ TÀI KHOẢN?</h3>
+                    <a href="/register" class="primary-btn">Đăng KÝ</a>
+                </div>
+            </div>
+        </div>
+        <div class="login__social">
+            <div class="row d-flex justify-content-center">
                 <div class="col-lg-6">
-                    <div class="login__register">
-                        <h3>KHÔNG CÓ TÀI KHOẢN?</h3>
-                        <a href="/register" class="primary-btn">Đăng KÝ</a>
-                    </div>
-                </div>
-            </div>
-            <div class="login__social">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="login__social__links">
-                            <a href="/">Quay lại trang chủ</a>
+                    <div class="login__social__links">
+                        <a href="/">Quay lại trang chủ</a>
 
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Login Section End -->
