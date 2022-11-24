@@ -10,9 +10,8 @@
                                     <img src="{{ asset('client') }}/img/logo/logo.jpg" alt="" width="80%">
                                 </div>
                                 <div class="footer-brief">
-                                    <p class="text-white">F-BIKE xin gửi lời cảm ơn sâu sắc tới Quý khách hàng đã quan tâm và ủng hộ
-                                        trong suốt thời gian vừa qua . Hàng triệu chiếc xe đã được đưa tới trung tâm để sửa
-                                        chữa nhằm mang lại niềm vui, hiệu quả và lợi ích cho khách hàng.</p>
+                                    <p class="text-white">F-BIKE xin gửi lời cảm ơn sâu sắc tới Quý khách hàng đã quan tâm và ủng hộ trong suốt thời gian vừa qua . Hàng triệu chiếc xe đã được đưa tới trung tâm để sửa chữa nhằm mang lại niềm vui, hiệu quả và lợi ích cho khách
+                                        hàng.</p>
                                 </div>
                             </div>
                         </div>
@@ -20,8 +19,8 @@
                             <div class="single-footer">
                                 <h4 class="footer-title border-left text-white">Về Chúng Tôi</h4>
                                 <ul class="footer-menu">
-                                    <li >
-                                        <a href="{{ asset('') }}gioi-thieu" class="text-white "><i class="zmdi zmdi-plus"></i><span class="b">Về FCAR </span></a>
+                                    <li>
+                                        <a href="{{ asset('') }}gioi-thieu" class="text-white "><i class="zmdi zmdi-plus"></i><span class="b">Về FBike </span></a>
                                     </li>
                                     <li>
                                         <a href="{{ asset('') }}cua-hang" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Mua
@@ -88,7 +87,7 @@
                                     <form action="#" class="text-black">
                                         <input type="text" name="name" placeholder="Tên của bạn..." class="text-black">
                                         <input type="text" name="email" placeholder="Email của bạn..." class="text-black">
-                                        <textarea class="height-80 text-black" name="message" placeholder="Nội dung..." ></textarea>
+                                        <textarea class="height-80 text-black" name="message" placeholder="Nội dung..."></textarea>
                                         <button class="submit-btn-1 mt-20 btn-hover-1" type="submit">Gửi Liên
                                             Hệ</button>
                                     </form>
@@ -107,8 +106,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="copyright-text">
-                                <p class="copy-text"> © 2022 <strong>F-BIKE</strong><i class="zmdi zmdi-favorite" style="color: red;" aria-hidden="true"></i> Dịch vụ
-                                    uy tín hàng đầu Việt Nam<a class="company-name" href="https://themeforest.net/user/codecarnival/portfolio">
+                                <p class="copy-text"> © 2022 <strong>F-BIKE</strong><i class="zmdi zmdi-favorite" style="color: red;" aria-hidden="true"></i> Dịch vụ uy tín hàng đầu Việt Nam
+                                    <a class="company-name" href="https://themeforest.net/user/codecarnival/portfolio">
                                         <strong></strong></a>.</p>
 
                             </div>
