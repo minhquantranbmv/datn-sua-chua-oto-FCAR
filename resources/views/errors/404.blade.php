@@ -5,7 +5,7 @@
 
 <head>
 
-    <title>Bệnh Viện Laptop 51</title>
+    <title>Error</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
 

@@ -85,7 +85,7 @@
                     <div>
 
                         <div class="col flex">
-                            <b>Tên máy :</b> <span>{{ $booking_detail->name_car }}</span>
+                            <b>Biển số :</b> <span>{{ $booking_detail->name_car }}</span>
                             {{-- <span>{{ $booking->full_name }}</span> --}}
                         </div>
                         <div class="col flex">
@@ -106,7 +106,7 @@
                         <div class="card">
 
                             <div class="card-header">
-                                <h4>Chọn linh kiện thay thế</h4>
+                                <h4>Chọn phụ tùng thay thế</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row">
@@ -136,7 +136,7 @@
                                     <table class="table table-hover table-inverse table-responsive">
                                         <thead class="thead-inverse">
                                             <tr>
-                                                <th>Tên linh kiện sửa</th>
+                                                <th>Tên phụ tùng sửa</th>
                                                 <th> Giá tiền sửa</th>
                                             </tr>
                                         </thead>
@@ -168,8 +168,8 @@
 
 
                                     </table><button type="button" onclick="add()" name="" id=""
-                                        class="btn btn-primary">Thêm linh
-                                        kiện</button>
+                                        class="btn btn-primary">Thêm 
+                                </button>
                                 </div>
 
                             </div>
@@ -180,7 +180,7 @@
 
 
                             </div>
-                            <h3>Danh sách linh kiện thay thế:</h3>
+                            <h3>Danh sách linh kiện phụ tùng thay thế:</h3>
                             <div>
                                 <table class="table">
                                     <thead>

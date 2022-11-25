@@ -27,7 +27,7 @@ class BillController extends Controller
                     $q->where('status_booking', '=', null);
                 }
 
-                if ($request->status == 'Tiếp nhận máy') {
+                if ($request->status == 'Tiếp nhận xe') {
                     $q->where('status_booking', '=', 'received');
                 }
 

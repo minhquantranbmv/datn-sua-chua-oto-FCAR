@@ -169,7 +169,7 @@ class PaymentController extends Controller
                 //     $phoneSend,
                 //     array(
                 //         'from' => $twilio_from,
-                //         'body' => 'Cam on ban da dat hang tai laptop51, ma hoa don cua ban la: ' . $length,
+                //         'body' => 'Cam on ban da dat hang tai F-BIKE, ma hoa don cua ban la: ' . $length,
                 //     )
                 //     );
             $user_send = User::find(Auth::id());

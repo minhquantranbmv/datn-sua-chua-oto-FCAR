@@ -171,7 +171,7 @@
     <div class="row">
       {{-- <h5 class="mx-auto">Máy 1</h5> --}}
       <div class="form-group col">
-        <label for="">Tên xe</label>
+        <label for="">Biển số</label>
         <input type="text" class="form-control" name="name_car" value="{{ $booking_detail->name_car }}" id=""
           aria-describedby="" placeholder="">
         {{-- <small id="" class="form-text text-muted">Help text</small> --}}

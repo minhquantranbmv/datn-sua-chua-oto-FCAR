@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bệnh Viện Laptop 51</title>
+    <title>Tin tức</title>
     @include('layout_client.style')
 </head>
 
@@ -20,20 +20,17 @@
         <!-- END HEADER AREA -->
 
         <!-- BREADCRUMBS SETCTION START -->
-        <div class="breadcrumbs-section plr-200 mb-80 section">
-            <div class="breadcrumbs overlay-bg">
+        <div class="breadcrumbs-section plr-200 mb-80 section ">
+            <div class="bg-light overlay-bg">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="breadcrumbs-inner">
+                    <div class="row ">
+                        <div class="col-lg-12 ">
+                            <div class="breadcrumbs-inner rounded">
                                 <h1 class="breadcrumbs-title text-success">Đặt Lịch Thành Công !</h1>
                                 <div class="row " style="word-wrap: break-word">
                                     <div class="col-lg-6">
                                         <h3><b>Họ và Tên:</b> {{ $request->full_name }}</h3>
                                         <h3><b>Email:</b> {{ $request->email }}
-                                        </h3>
-                                        {{-- <h3><b>Địa Chỉ:</b> Thôn 9 Cát Quế - Hoài Đức - Hà Nội --}}
-                                        </h3>
                                         <h3><b>Số điện thoại:</b>
                                             {{ $request->phone }}</h3>
 
@@ -41,15 +38,15 @@
 
                                     {{-- <div>Tên máy: {{ $booking_detail->name_car }}</div> --}}
                                     <div class="col-lg-6">
-                                        <h3><b>Tên máy:</b>
+                                        <h3><b>Biển số:</b>
                                             {{ $booking_detail->name_car }}</h3>
-                                        <h3><b>Hãng máy:</b>
+                                        <h3><b>Hãng xe:</b>
                                             {{ $booking_detail->carCompany->company_name }}</h3>
                                         <h3><b>Khung giờ sửa:</b>
                                             {{ $details['interval'] }}
 
                                         </h3>
-                                        <h3><b>Ngày sửa:</b>
+                                        <h3><b>Ngày mang tới:</b>
                                             {{ $request->date }}</h3>
 
                                     </div>

@@ -19,13 +19,13 @@
 
         <!-- BREADCRUMBS SETCTION START -->
         <div class="breadcrumbs-section plr-200 mb-80 section">
-        <h1 class="breadcrumbs-title">Đặt Lịch Sửa Chữa Xe Máy</h1>
+            <h1 class="breadcrumbs-title">Đặt Lịch Sửa Chữa Xe Máy</h1>
             <div class="breadcrumbs overlay-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumbs-inner">
-                                
+
                                 <!-- <ul class="breadcrumb-list">
                                     <li><a href="index.html">Trang Chủ</a></li>
                                     <li>Đặt Lịch</li>
@@ -56,26 +56,25 @@
                                         <div class="col-lg-6">
                                             <label for="">Họ và Tên</label>
                                             <font color="red">*</font>
-                                            <input type="text" name="full_name" value="{{ old('full_name') }}" placeholder="Họ tên">@error('full_name')
+                                            <input type="text" name="full_name" @if(Session::has( 'data')) value="{{Session::get('data')['full_name']}}" @else value="{{ old('full_name') }}" @endif placeholder="Họ tên">@error('full_name')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="">Email</label>
                                             <font color="red">*</font>
-                                            <input type="text" name="email" value="{{ old('email') }}" placeholder="Email"> @error('email')
+                                            <input type="text" name="email" @if(Session::has( 'data')) value="{{Session::get('data')['email']}}" @else value="{{ old('email') }}" @endif placeholder="Email"> @error('email')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="">Biển số</label>
                                             <font color="red">*</font>
-                                            <input type="text" value="{{ old('name_car') }}" name="name_car" placeholder="Số biển"> @error('name_car')
+                                            <input type="text" @if(Session::has( 'data')) value="{{Session::get('data')['name_car']}}" @else value="{{ old('name_car') }}" @endif name="name_car" placeholder="Số biển"> @error('name_car')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
-
                                         <div class="col-lg-6">
                                             <label for="">Số điện thoại</label>
                                             <font color="red">*</font>
-                                            <input type="text" value="{{ old('phone') }}" name="phone" placeholder="Số điện thoại..."> @error('phone')
+                                            <input type="text" @if(Session::has( 'data')) value="{{Session::get('data')['phone']}}" @else value="{{ old('phone') }}" @endif name="phone" placeholder="Số điện thoại..."> @error('phone')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         {{--
@@ -95,36 +94,34 @@
                                                 @foreach ($company_Car as $item)
                                                 <option value="{{ $item->id }}">{{ $item->company_name }}</option>
                                                 @endforeach
-                                                <option value="hp">KIA</option>
+                                                <!-- <option value="hp">KIA</option>
                                                 <option value="acer">TOYOTA</option>
                                                 <option value="macbook">AUDI</option>
                                                 <option value="msi">BMW</option>
-                                                <option value="khac">khác...</option>
+                                                <option value="khac">khác...</option> -->
                                             </select> @error('company_car_id')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col-lg-6">
-                                            <label for="">Khung giờ sửa chữa</label>
+                                            <label for="">Khung giờ nhận xe</label>
                                             <font color="red">*</font>
                                             <select name="interval" id="con_ht">
-                                                {{-- <option hidden value="">Khung giờ sửa chữa</option> --}}
+                                                {{-- <option hidden value="">Khung giờ nhận xe</option> --}}
                                                 <option value="1">8h-10h</option>
                                                 <option value="2">10h-12h</option>
                                                 <option value="3">12h-14h</option>
                                                 <option value="4">14h-16h</option>
                                                 <option value="5">16h-18h</option>
                                                 <option value="6">18h-20h</option>
-                                            </select> 
-                                            @if(Session::has('error'))
+                                            </select> @if(Session::has('error'))
                                             <p class="login-box-msg text-danger">{{Session::get('error')}}</p>
-                                            @endif
-                                            @error('interval')
+                                            @endif @error('interval')
                                             <small id="helpId" class="form-text text-danger">{{ $message }}</small> @enderror
                                         </div>
                                         <div class="col">
                                             <label for="">Ngày mang đến</label>
                                             <font color="red">*</font>
-                                            <input type="date" id="date" min="{{ now()->format('Y-m-d') }}" name="date" value="{{ old('date') }}" placeholder="Ngày"> @error('date')
+                                            <input type="date" id="date" min="{{ now()->format('Y-m-d') }}" name="date" @if(Session::has( 'data')) value="{{Session::get('data')['date']}}" @else value="{{ old('date') }}" @endif placeholder="Ngày"> @error('date')
                                             @if(Session::has('error'))
                                             <p class="login-box-msg text-danger">{{Session::get('error')}}</p>
                                             @endif
@@ -132,7 +129,7 @@
                                         </div>
                                         <div class="col-lg-12">
                                             <label for="">Mô tả</label>
-                                            <textarea class="custom-textarea" name="description" id="ckeditor" placeholder="Nội dung...">{{ old('description') }}</textarea>
+                                            <textarea class="custom-textarea" name="description" id="ckeditor" placeholder="Nội dung...">@if(Session::has( 'data')) {{Session::get('data')['description']}} @else {{ old('description') }} @endif</textarea>
 
                                         </div> <button class="submit-btn-1 mt-30 btn-hover-1" name="btn" value="client" type="submit">Đặt
                                             Lịch</button>

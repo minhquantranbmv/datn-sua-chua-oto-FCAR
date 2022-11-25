@@ -46,11 +46,11 @@
             </li>
             @can('list-user')
 
-            <li class="nav-item {{ request()->is('admin/CompanyComputer*') ? ' menu-is-opening menu-open' : '' }}">
-                <a href="" class="nav-link {{ request()->is('admin/CompanyComputer*') ? 'active ' : '' }}">
+            <li class="nav-item {{ request()->is('admin/CompanyCar*') ? ' menu-is-opening menu-open' : '' }}">
+                <a href="" class="nav-link {{ request()->is('admin/CompanyCar*') ? 'active ' : '' }}">
                     <i class="nav-icon fas fa-align-justify"></i>
                     <p>
-                        Danh mục sản phẩm mới
+                        Danh mục sản phẩm
                         <i class="fas fa-angle-left right"></i>
 
                         {{-- <span class="badge badge-info right">6</span> --}}
@@ -59,8 +59,8 @@
                 <ul class="nav nav-treeview">
                     @can('list-category')
                     <li class="nav-item">
-                        <a href="/admin/CompanyComputer"
-                            class="nav-link {{ request()->is('admin/CompanyComputer') ? 'active' : '' }}">
+                        <a href="/admin/CompanyCar"
+                            class="nav-link {{ request()->is('admin/CompanyCar') ? 'active' : '' }}">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Danh sách</p>
                         </a>
@@ -68,8 +68,8 @@
                     @endcan
                     @can('add-category')
                     <li class="nav-item">
-                        <a href="/admin/CompanyComputer/add"
-                            class="nav-link {{ request()->is('admin/CompanyComputer/add') ? 'active' : '' }}">
+                        <a href="/admin/CompanyCar/add"
+                            class="nav-link {{ request()->is('admin/CompanyCar/add') ? 'active' : '' }}">
                             <i class="fas fa-regular fa-plus nav-icon"></i>
                             <p>Thêm mới</p>
                         </a>
@@ -133,7 +133,7 @@
                         <a href="{{ route('sua-chua.danh-sach-chua-xac-nhan') }}"
                             class="nav-link {{ request()->is('admin/dat-lich/danh-sach-chua-xac-nhan') ? 'active' : '' }}">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>DS máy đặt lịch</p>
+                            <p>DS xe đặt lịch</p>
                         </a>
                     </li>
                     @endcan
@@ -148,7 +148,7 @@
                         <a href="{{ route('sua-chua.danh-sach-cho-sua') }}"
                             class="nav-link {{ request()->is('admin/dat-lich/danh-sach-cho-sua') ? 'active' : '' }}">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>DS máy chờ sửa </p>
+                            <p>DS xe chờ sửa </p>
                         </a>
                     </li>
                     @endcan
@@ -157,7 +157,7 @@
                         <a href="{{ route('sua-chua.danh-sach-da-sua-xong') }}"
                             class="nav-link {{ request()->is('admin/dat-lich/danh-sach-da-sua-xong') ? 'active' : '' }}">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>DS máy đã sửa xong</p>
+                            <p>DS xe đã sửa xong</p>
                         </a>
                     </li>
                     @endcan
@@ -174,7 +174,7 @@
             </li>
 
             @can('list-category')
-            
+
             {{-- <li class="nav-item {{ request()->is('admin/sua-chua*') ? ' menu-is-opening menu-open' : '' }}">
                 <a href="" class="nav-link {{ request()->is('admin/sua-chua*') ? 'active ' : '' }}"> --}}
 
@@ -182,7 +182,7 @@
                 <a href="" class="nav-link {{ request()->is('admin/category_component*') ? 'active ' : '' }}">
                     <i class="nav-icon fas fa-list-ul"></i>
                     <p>
-                        Danh mục linh kiện sửa
+                        Danh mục phụ tùng sửa
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
@@ -214,7 +214,7 @@
                 <a href="" class="nav-link {{ request()->is('admin/component*') ? 'active' : '' }}">
                     <i class="nav-icon fas fa-th-list"></i>
                     <p>
-                        DS linh kiện sửa
+                        DS phụ tùng sửa
                         <i class="fas fa-angle-left right"></i>
                         {{-- <span class="badge badge-info right">6</span> --}}
                     </p>

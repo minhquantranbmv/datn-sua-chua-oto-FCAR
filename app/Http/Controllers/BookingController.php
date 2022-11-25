@@ -165,7 +165,7 @@ class BookingController extends Controller
          }
       if(strtotime($nowTime)>=strtotime($time)){
 
-         return back()->with('error','Thời gian bạn chọn không hợp lệ');
+         return back()->with('error','Thời gian bạn chọn không hợp lệ')->with('data',$request->all());
       }
 
       }
@@ -222,7 +222,7 @@ class BookingController extends Controller
       }
       // dd($details);
 
-      dispatch(new SendOrderSuccessEmail($details));
+      // dispatch(new SendOrderSuccessEmail($details));
       // $mod = $request->all(); 
       // dd($mod);
       // if ($request->btn == 'admin') {

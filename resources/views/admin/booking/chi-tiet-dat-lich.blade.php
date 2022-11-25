@@ -41,11 +41,11 @@
 
                                     </div>
                                     <div class="col-lg-6">
-                                        <h3><b>Tên xe máy: </b>
+                                        <h3><b>Biển số: </b>
                                             {{ $booking_detail->name_car }}</h3>
-                                        <h3><b>Hãng máy:</b>
+                                        <h3><b>Hãng xe:</b>
                                             {{ $booking_detail->carCompany->company_name }}</h3>
-                                        <h3><b>Khung giờ sửa:</b>
+                                        <h3><b>Khung giờ mang xe tới:</b>
                                             {{ $booking_detail->khung_gio }} </h3>
                                         <h3><b>Ngày sửa:</b>
                                             {{ $booking_detail->booking->date }}</h3>

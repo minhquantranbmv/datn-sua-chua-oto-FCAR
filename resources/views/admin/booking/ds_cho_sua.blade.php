@@ -6,7 +6,7 @@
         <thead class="thead-light">
             <tr>
                 <th scope="col" class="sort" data-sort="name">STT</th>
-                <th scope="col" class="sort" data-sort="name">Tên máy</th>
+                <th scope="col" class="sort" data-sort="name">Biển số</th>
                 <th scope="col" class="sort" data-sort="budget">Tên khách hàng</th>
                 <th scope="col" class="sort" data-sort="status">Số điện thoại</th>
                 {{-- <th scope="col">Hình thức sửa</th> --}}

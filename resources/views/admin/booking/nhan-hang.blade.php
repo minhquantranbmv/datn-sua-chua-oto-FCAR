@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-{{-- @section('title','Phiếu giữ máy') --}}
+{{-- @section('title','Phiếu giữ xe máy') --}}
 @section('content')
 <div class="mx-auto container border">
 
@@ -28,7 +28,7 @@
             {{-- <small id="helpId" class="form-text text-muted">Help text</small> --}}
         </div>
         <div class="form-group col-4">
-            <label for="">Tên xe</label>
+            <label for="">Biển số</label>
             <input class="form-control" type="text" name="name_car" value="{{ $booking_detail->name_car }}">
             {{-- <small id="helpId" class="form-text text-muted">Help text</small> --}}
         </div>
@@ -87,7 +87,7 @@
         <form action="{{ route('phieu-nhan-may', ['booking_detail_id'=>$booking_detail->id]) }}" method="POST">
             @csrf
 
-            <h2 class="mx-auto">Phiếu tiếp nhận máy</h2>
+            <h2 class="mx-auto">Phiếu tiếp nhận xe</h2>
 
 
         </form>

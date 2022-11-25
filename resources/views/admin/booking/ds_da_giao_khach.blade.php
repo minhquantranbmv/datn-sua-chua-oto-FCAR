@@ -4,7 +4,7 @@
     <table class="table align-items-center table-flush">
         <thead class="thead-light">
             <tr>
-                <th scope="col" class="sort" data-sort="name">Tên xe máy</th>
+                <th scope="col" class="sort" data-sort="name">Biển số</th>
                 <th scope="col" class="sort" data-sort="budget">Tên khách hàng</th>
                 <th scope="col" class="sort" data-sort="status">SDT</th>
                 <th scope="col">Hình thức sửa</th>

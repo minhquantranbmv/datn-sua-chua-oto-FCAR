@@ -1,105 +1,121 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Xí nghiệp Fcar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        if (window.performance.navigation.type === 2) {
+            location.reload();
+        }
+    </script>
     <!--===============================================================================================-->
-<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/bootstrap/{{ asset('client') }}/css/bootstrap.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/fonts/font-awesome-4.7.0/{{ asset('client') }}/css/font-awesome.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/fonts/iconic/{{ asset('client') }}/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/animate/animate.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/animsition/{{ asset('client') }}/css/animsition.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/util.css">
-<link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/main.css">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/bootstrap/{{ asset('client') }}/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/fonts/font-awesome-4.7.0/{{ asset('client') }}/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/fonts/iconic/{{ asset('client') }}/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/animsition/{{ asset('client') }}/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/util.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('client') }}/css/main.css">
 
-<link rel="stylesheet" href="{{ asset('css') }}/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="{{ asset('css') }}/font-awesome.min.css" type="text/css">
-<link rel="stylesheet" href="{{ asset('css') }}/elegant-icons.css" type="text/css">
-<link rel="stylesheet" href="{{ asset('css') }}/plyr.css" type="text/css">
-<link rel="stylesheet" href="{{ asset('css') }}/nice-select.css" type="text/css">
-<link rel="stylesheet" href="{{ asset('css') }}/owl.carousel.min.css" type="text/css">
-<link rel="stylesheet" href="{{ asset('css') }}/slicknav.min.css" type="text/css">
-<link rel="stylesheet" href="{{ asset('css') }}/style.css" type="text/css">
-<!--===============================================================================================-->
+    <link rel="stylesheet" href="{{ asset('css') }}/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/plyr.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css') }}/style.css" type="text/css">
+    <!--===============================================================================================-->
 
 
-<style>
-    .invalid-feedback {
-        display: block;
-        background-color: red;
-        margin-top: 30px;
-        margin-bottom: 40px;
-        margin-right: 20px;
-        height: 40px;
-        /* padding: 10px; */
-        font-size: 5px;
-    }
-    
-    .invalid-feedback-pass {
-        display: block;
-        background-color: red;
-        margin-top: 45px;
-        margin-bottom: 30px;
-        margin-right: 60px;
-        height: 20px;
-        width: 90%;
-    }
-    
-    .text-massage {
-        color: #ffffff;
-        font-size: 20px;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .text-massage-pass {
-        color: #ffffff;
-        font-size: 10px;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .login__form form .input__item_phone {
-        position: relative;
-        width: 370px;
-        margin-bottom: 20px;
-    }
-    
-    .login__form form .input__item_phone:before {
-        position: absolute;
-        left: 50px;
-        top: 30px;
-        height: 30px;
-        width: 1px;
-        background: #b7b7b7;
-        content: "";
-    }
-    
-    .login__form form .input__item_phone input {
-        height: 50px;
-        width: 100%;
-        font-size: 15px;
-        color: #b7b7b7;
-        background: #ffffff;
-        border: none;
-        padding-left: 76px;
-    }
-</style>
+    <style>
+        .invalid-feedback {
+            display: block;
+            background-color: red;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            margin-right: 20px;
+            height: 40px;
+            /* padding: 10px; */
+            font-size: 5px;
+        }
+        
+        .invalid-feedback-pass {
+            display: block;
+            background-color: red;
+            margin-top: 45px;
+            margin-bottom: 30px;
+            margin-right: 60px;
+            height: 20px;
+            width: 90%;
+        }
+        
+        .text-massage {
+            color: #ffffff;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .text-massage-pass {
+            color: #ffffff;
+            font-size: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .login__form form .input__item_phone {
+            position: relative;
+            width: 370px;
+            margin-bottom: 20px;
+        }
+        
+        .login__form form .input__item_phone:before {
+            position: absolute;
+            left: 50px;
+            top: 30px;
+            height: 30px;
+            width: 1px;
+            background: #b7b7b7;
+            content: "";
+        }
+        
+        .login__form form .input__item_phone input {
+            height: 50px;
+            width: 100%;
+            font-size: 15px;
+            color: #b7b7b7;
+            background: #ffffff;
+            border: none;
+            padding-left: 76px;
+        }
+        /* #show-password {
+            width: 20px;
+            height: 20px;
+            margin: 15px 20px;
+        }
+        
+        #show {
+            color: aliceblue;
+            font-size: 20px;
+        } */
+    </style>
 </head>
 
 <body>
@@ -146,11 +162,14 @@
                                 </span> @enderror
                             </div>
                             <div class="input__item" data-validate="Enter password">
-                                <input type="text" type="password" name="password" placeholder="Mật khẩu"> @error('password')
+                                <input type="password" name="password" upassword placeholder="Mật khẩu"> @error('password')
                                 <span class="invalid-feedback-pass" role="alert">
                                     <strong class="text-massage-pass">{{ $message }}</strong>
                                 </span> @enderror
+
+
                             </div>
+
                             <button type="submit" class="site-btn">ĐĂNG NHẬP NGAY</button>
                         </form>
                         <a href="/forget-password" class="forget_pass">QUÊN MẬT KHẨU?</a>
@@ -194,16 +213,10 @@
     <!--===============================================================================================-->
     <script src="{{ asset('client') }}/vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
 
 
-    <!-- <script src="{{ asset('css') }}/js/jquery-3.3.1.min.js"></script>
-    <script src="{{ asset('css') }}/js/bootstrap.min.js"></script>
-    <script src="{{ asset('css') }}/js/player.js"></script>
-    <script src="{{ asset('css') }}/js/jquery.nice-select.min.js"></script>
-    <script src="{{ asset('css') }}/js/mixitup.min.js"></script>
-    <script src="{{ asset('css') }}/js/jquery.slicknav.js"></script>
-    <script src="{{ asset('css') }}/js/owl.carousel.min.js"></script>
-    <script src="{{ asset('css') }}/js/main.js"></script> -->
 
 </body>
 

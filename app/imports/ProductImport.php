@@ -97,7 +97,7 @@ class ProductImport implements ToModel, WithStartRow, WithValidation, SkipsOnErr
             '5.integer' => 'Số lượng phải là số',
             '5.min' => 'Số lượng nhỏ nhất bằng 0',
             '6.required' => 'Trạng thái không được để trống',
-            '1.required' => 'Danh mục laptop không được để trống',
+            '1.required' => 'Danh mục xe máy không được để trống',
             '1.exists' => 'Danh mục không tồn tại',
             '7.required' => 'Mô tả ngắn không được để trống',
             '8.required' => 'Ram không được để trống',
