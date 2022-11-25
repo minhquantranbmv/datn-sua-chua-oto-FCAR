@@ -38,8 +38,8 @@ class CompanyComputerRequest extends FormRequest
     public function messages()
     {
         return [
-            'company_name.required' => 'Hãy nhập tên máy tính',
-            'company_name.unique' => 'Tên máy tính đã tồn tại',
+            'company_name.required' => 'Hãy nhập tên xe',
+            'company_name.unique' => 'Tên xe đã tồn tại',
             'anh.required' => 'Hãy nhập ảnh',
             'anh.image' => 'Là ảnh',
             'anh.mimes' => 'Sai định dạng ảnh'

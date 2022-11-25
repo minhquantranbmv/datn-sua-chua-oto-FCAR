@@ -67,7 +67,7 @@ class ProductRequest extends FormRequest
             'import_price.numeric' => 'Kiểu dữ phải là dạng số',
             'import_price.min' => 'Giá nhập tối thiểu là 10.000 vnđ',
             'import_price.max' => 'Giá nhập tối đa là 50.000.000 vnđ',
-            'companyCar_id.required' => 'Bạn chưa chọn danh mục laptop',
+            'companyCar_id.required' => 'Bạn chưa chọn danh mục XE',
             'insurance.required' => 'Bạn chưa nhập thời gian bảo hành',
             'insurance.between' => 'Thời gian bảo hành từ 0 đến 36 tháng',
             'desc_short.required' => 'Mời bạn nhập mô tả',
