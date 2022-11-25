@@ -68,7 +68,7 @@
             <!-- ABOUT SECTION END -->
 
             <!-- TEAM SECTION START -->
-            <div class="team-section mb-50">
+            {{-- <div class="team-section mb-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -247,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- TEAM SECTION END -->
         </section>
         <!-- End page content -->

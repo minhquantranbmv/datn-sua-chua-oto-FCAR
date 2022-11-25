@@ -89,7 +89,7 @@
                             {{-- <span>{{ $booking->full_name }}</span> --}}
                         </div>
                         <div class="col flex">
-                            <b>Hãng máy :</b> <span>{{ $booking_detail->carCompany->company_name }}</span>
+                            <b>Hãng xe :</b> <span>{{ $booking_detail->carCompany->company_name }}</span>
                             {{-- <span>{{ $booking->full_name }}</span> --}}
                         </div>
                     </div>
