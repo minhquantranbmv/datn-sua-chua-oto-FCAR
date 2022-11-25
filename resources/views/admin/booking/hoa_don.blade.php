@@ -18,7 +18,7 @@
     <div class="row">
         <p class="col-3"> <b> Biển số: </b>{{ $booking_detail->name_car }}</p>
         <p class="col-3"> <b> Hãng: </b>{{ $booking_detail->carCompany->company_name }}</p>
-        <p class="col-3"> <b> Thời gian xuất hóa đơn: </b>{{ $list_bill->date }}</p>
+        {{-- <p class="col-3"> <b> Thời gian xuất hóa đơn: </b>{{ $list_bill->date }}</p> --}}
 
     </div><br> {{--
     <p>Số điện thoại: {{ $booking_detail->booking->phone }}</p> --}}

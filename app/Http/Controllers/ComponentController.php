@@ -6,7 +6,7 @@ use App\Models\Category;
 use App\Models\CategoryComponent;
 use App\Models\Component;
 use App\Models\ComponentCarConpany;
-use App\Models\ComputerCompany;
+use App\Models\CarCompany;
 use Illuminate\Http\Request;
 
 class ComponentController extends Controller
@@ -35,8 +35,8 @@ class ComponentController extends Controller
     public function addForm()
     {
         $categories = CategoryComponent::all();
-        $computer_company = ComputerCompany::all();
-        return view('admin.components.add', compact('categories', 'computer_company'));
+        $car_company = CarCompany::all();
+        return view('admin.components.add', compact('categories', 'car_company'));
     }
     public function saveAdd(Request $request)
     {
@@ -49,8 +49,8 @@ class ComponentController extends Controller
         //     $request->merge(['image' => $imgPath]);
         // }
         // dd($model); 
-        foreach ($request->computer_company_id as $c) {
-            ComponentComputerConpany::create(['component_id' => $model->id, 'computer_conpany_id' => $c, 'active' => 1]);
+        foreach ($request->car_company_id as $c) {
+            ComponentCarConpany::create(['component_id' => $model->id, 'car_conpany_id' => $c, 'active' => 1]);
         }
         // $model->fill($request->all());
         // $model->save();

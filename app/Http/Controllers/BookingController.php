@@ -482,7 +482,7 @@ class BookingController extends Controller
          $booking_detail->save();
 
          //notify
-         $data['title'] = 'Máy đã sửa xong: ' .  $booking_detail->full_name;
+         $data['title'] = 'Xe đã sửa xong: ' .  $booking_detail->full_name;
 
          $data['from'] = 1;
          $data['to'] = 1;
