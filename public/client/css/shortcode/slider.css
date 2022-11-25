@@ -15,9 +15,11 @@
 }
 .slider-img {
   width: 100%;
+  height: 475px;
 }
 .slider-img > img {
   width: 100%;
+  height: 475px;
 }
 .slider-info {
   height: calc(100% - 100px);
