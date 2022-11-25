@@ -82,14 +82,14 @@
                                             <hr>
                                             <!-- single-pro-color-rating -->
                                             <div class="single-pro-color-rating">
-                                                <h5 class="widget-title border-left">Thông số máy</h5>
-                                                <div class="sin-pro-color">
+                                                {{-- <h5 class="widget-title border-left">Thông số máy</h5> --}}
+                                                {{-- <div class="sin-pro-color">
                                                     <p class="text-black-1 title">RAM: {{$pro->ram}}</p>
                                                     <p class="text-black-1 title">CPU: {{$pro->cpu}}</p>
                                                     <p class="text-black-1 title">Ổ cứng: {{$pro->harddrive}}</p>
                                                     <p class="text-black-1 title">Màn hình: {{$pro->screen}}</p>
                                                     <p class="text-black-1 title">Card đồ họa: {{$pro->cardgraphic}}</p>
-                                                </div>
+                                                </div> --}}
 
                                             </div>
 
@@ -237,7 +237,7 @@ if (!function_exists('currency_format')) {
                             <h6 class="widget-title border-left mb-20">Danh mục</h6>
                             <div id="cat-treeview" class="product-cat">
                                 <ul>
-                                    <li class="open"><a href="#">Laptop</a>
+                                    <li class="open"><a href="#">Xe</a>
                                         <ul>
                                             <li>
                                                 <a @if(session()->get('url_path') == "cua-hang") style="color:#ff7f00"

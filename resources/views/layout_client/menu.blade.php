@@ -119,7 +119,7 @@
                         <ul>
                             <li><a href="{{ asset('') }}">Trang Chủ số 1</a></li>
                             <li><a href="{{ asset('') }}gioi-thieu">Giới Thiệu</a></li>
-                            <li><a href="{{ asset('') }}cua-hang">Laptop</a></li>
+                            <li><a href="{{ asset('') }}cua-hang">Xe</a></li>
                             <li><a href="{{ asset('') }}dat-lich">Đặt Lịch</a></li>
                             <li><a href="{{ asset('') }}tin-tuc">Tin Tức</a></li>
                             <li><a href="{{ asset('') }}lien-he">Liên Hệ</a></li>
