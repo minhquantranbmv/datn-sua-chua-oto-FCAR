@@ -37,9 +37,10 @@ class NewsController extends Controller
         if($request->hasFile('image')){
             $model->image = $request->file('image')->storeAs('news', uniqid() . '-' . $request->image->getClientOriginalName());
         }
-        if(Auth::check()){
-            $model->actor = Auth::id();
-        }else{
+        // if(Auth::check()){
+        //     $model->actor = Auth::id();
+        // }
+        else{
             return redirect(route('login'));
         }
         $model->save();

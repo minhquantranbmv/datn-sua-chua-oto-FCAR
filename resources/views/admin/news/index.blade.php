@@ -45,11 +45,9 @@
                     <th scope="col">STT</th>
                     <th scope="col">Tiêu Đề</th>
                     <th scope="col">Ảnh</th>
-                    <th scope="col">Người đăng</th>
                     <th scope="col">Danh mục</th>
                     <th scope="col">Trạng thái</th>
-                    <th scope="col">View</th>
-                    <th scope="col">Created_at</th>
+                    <th scope="col">Ngày đăng</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -61,8 +59,7 @@
                         <td>
                             <img src="{{ asset($item->image) }}" alt="" width="100">
                         </td>
-                        <td>{{ $item->user->name }}
-                        </td>
+                        
                         <td>
                             @if (!empty($item->category_news->name))
                                 {{ $item->category_news->name }}
@@ -70,8 +67,7 @@
                         </td>
                         <td>{{ $item->status == 1 ? 'Hiện' : 'Ẩn' }}
                         </td>
-                        <td>{{ $item->view }}
-                        </td>
+                       
                         <td> {{ $item->created_at }} </td>
                         <td> <button type="button" class="btn btn-primary"><a style="color:white;  text-decoration: none;"
                                     href="{{ route('news.edit', ['id' => $item->id]) }}"> Sửa</a></button>
