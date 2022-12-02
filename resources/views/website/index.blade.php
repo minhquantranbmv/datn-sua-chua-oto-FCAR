@@ -78,7 +78,7 @@
                 </div>
 
                 <!-- PRODUCT TAB SECTION START -->
-                <div class="product-tab-section mb-50">
+                {{-- <div class="product-tab-section mb-50">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!-- PRODUCT TAB SECTION END -->
 
