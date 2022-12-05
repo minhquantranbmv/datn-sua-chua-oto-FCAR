@@ -49,7 +49,7 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="about-photo p-20 bg-img-1">
-                                <img src="{{ asset('client') }}/img/others/about.jpg" alt="">
+                                <img src="{{ asset('client') }}/img/others/xe-may.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -63,6 +63,42 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-5">
+                            <div class="about-photo p-20 bg-img-1">
+                                <img src="{{ asset('client') }}/img/others/1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="about-description mt-50">
+                                <p>SỬA XE MÁY TẠI CHỖ</p>
+
+                                <p>Dịch Vụ Cứu Hộ Xe Máy tại Hà Nội Và TPHCM 24/24 Của Trung Hiếu motor chuyên cứu hộ xe honda, cứu hộ xe yamaha, cứu hộ xe Suzuki, Cứu hộ xe máy piaggio sẵn sàng hỗ trợ 24/24 tất cả các ngày trong tuần. Với đội ngũ nhân viên đông đảo chuyên nghiệp sẵn sàng phục vụ tất cả các khách hàng hư hỏng xe máy trên địa bàn toàn thành phố. Có mặt nhanh chóng sau 10 Phút. Đội ngũ nhân viên được đào tạo chuyên sâu với phụ tùng thay thế chính hãng.
+                                     Sẵn sàng phục vụ lưu động tại chỗ với chi phí rẻ như tại cửa hàng. Liên Hệ Ngay!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="about-photo p-20 bg-img-1">
+                                <img src="{{ asset('client') }}/img/others/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="about-description mt-50">
+                                <p>Chính sách quản lý</p>
+
+                                <p>Luôn vươn tới bằng tham vọng và sự tươi trẻ.<br>
+                                    Tôn trọng lý thuyết vững chắc, phát triển những ý tưởng mới, và sử dụng thời gian hiệu quả nhất.<br>
+                                    Hứng thú trong công việc và khuyến khích giao tiếp cởi mở.<br>
+                                    Không ngừng phấn đấu cho một qui trình làm việc hài hòa.<br>
+                                    Luôn quan tâm đến giá trị của nghiên cứu và nỗ lực.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
                 </div>
             </div>
             <!-- ABOUT SECTION END -->

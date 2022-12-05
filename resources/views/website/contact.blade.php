@@ -111,23 +111,23 @@
                                     <i class="fa fa-phone"></i>
                                     <h4 class="title">Số điện thoại:</h4>
                                     <ul>
-                                        <li>+123 456-789-1120</li>
-                                        <li>+522 672-452-1120</li>
+                                        <li>(+84)385537286</li>
+                                        <li>(+84)974348193</li>
                                     </ul>
                                 </div>
                                 <div class="single-info">
                                     <i class="fa fa-envelope-open"></i>
                                     <h4 class="title">Email:</h4>
                                     <ul>
-                                        <li><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></li>
-                                        <li><a href="mailto:info@yourwebsite.com">support@yourwebsite.com</a></li>
+                                        <li><a href="mailto:info@yourwebsite.com">fbike86@yourwebsite.com</a></li>
+                                        <li><a href="mailto:info@yourwebsite.com">htdv_fbike86@yourwebsite.com</a></li>
                                     </ul>
                                 </div>
                                 <div class="single-info">
                                     <i class="fa fa-location-arrow"></i>
                                     <h4 class="title">Địa chỉ trụ sở:</h4>
                                     <ul>
-                                        <li>Số 5 Ngõ 85 Láng Hạ, Q. Ba Đình, Tp. Hà Nội</li>
+                                        <li>1 Trịnh Văn Bô - Xuân Phương - Nam Từ Liêm - Hà Nội</li>
                                     </ul>
                                 </div>
                             </div>
