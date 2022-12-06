@@ -116,9 +116,9 @@ Route::middleware(['auth', 'account.admin'])->group(function () {
         Route::get('/', [BookingController::class, 'listBookingDetail'])->name('dat-lich.index');
         Route::post('/', [BookingController::class, 'selectStatusBooking']);
 
-        Route::get('/danh-sach-may', [BookingController::class, 'listBookingDetail'])->name('dat-lich.danh-sach-may');
-        Route::post('/danh-sach-may', [BookingController::class, 'selectUserRepair']);
-        // Route::get('/danh-sach-may-phan-cong', [BookingController::class, 'listBookingDetail'])->name('dat-lich.danh-sach-may');
+        Route::get('/danh-sach-xe', [BookingController::class, 'listBookingDetail'])->name('dat-lich.danh-sach-xe');
+        Route::post('/danh-sach-xe', [BookingController::class, 'selectUserRepair']);
+        // Route::get('/danh-sach-xe-phan-cong', [BookingController::class, 'listBookingDetail'])->name('dat-lich.danh-sach-xe');
 
         Route::get('send-mail-finish-member/{booking_detail_id}', [BookingDetailController::class, 'sendMailFinishMember'])->name('dat-lich.send-mail-finish-member');
 
@@ -135,10 +135,10 @@ Route::middleware(['auth', 'account.admin'])->group(function () {
         Route::post('hoa-don/{id}', [BookingDetailController::class, 'luuHoaDon']);
         Route::get('xuat-hoa-don/{booking_detail_id}', [BookingDetailController::class, 'xuatHoaDon'])->name('dat-lich.xuat-hoa-don');
 
-        Route::get('danh-sach-may-phan-cong', [BookingController::class, 'userRepair'])->name('dat-lich.user_epair')->middleware('can:list-repair');
-        Route::get('xoa-may/{id}', [BookingController::class, 'deleteBooking'])->name('dat-lich.deleteBookingDetail')->middleware('can:delete-booking');
-        Route::get('tiep-nhan-may/{booking_detail_id}', [BookingController::class, 'tiepNhanMay'])->name('dat-lich.tiep-nhan-may')->middleware('can:edit-booking');
-        Route::post('phieu-nhan-may/{booking_detail_id}', [BookingDetailController::class, 'phieuNhanMay'])->name('phieu-nhan-may')->middleware('can:edit-booking');
+        Route::get('danh-sach-xe-phan-cong', [BookingController::class, 'userRepair'])->name('dat-lich.user_epair')->middleware('can:list-repair');
+        Route::get('xoa-xe/{id}', [BookingController::class, 'deleteBooking'])->name('dat-lich.deleteBookingDetail')->middleware('can:delete-booking');
+        Route::get('tiep-nhan-xe/{booking_detail_id}', [BookingController::class, 'tiepNhanXe'])->name('dat-lich.tiep-nhan-xe')->middleware('can:edit-booking');
+        Route::post('phieu-nhan-xe/{booking_detail_id}', [BookingDetailController::class, 'phieuNhanXe'])->name('phieu-nhan-xe')->middleware('can:edit-booking');
     });
     Route::prefix('sua-chua')->group(function () {
         Route::get('/{id}', [BookingController::class, 'repairDetail'])->name('suachua.get')->middleware('can:edit-repair');
