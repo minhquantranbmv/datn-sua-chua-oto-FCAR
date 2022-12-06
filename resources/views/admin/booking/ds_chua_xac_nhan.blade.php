@@ -147,7 +147,7 @@
                     <a name="" id="" class="btn btn-info" @if ($b->status_booking!='latch')
                         style="display: none"
                         @endif
-                        href="{{ route('dat-lich.tiep-nhan-may', ['booking_detail_id'=>$b->id]) }}" role="button">Tiếp
+                        href="{{ route('dat-lich.tiep-nhan-xe', ['booking_detail_id'=>$b->id]) }}" role="button">Tiếp
                         nhận xe</a>
                     @endcan
                     {{-- <a name="" id="" class="btn btn-danger"

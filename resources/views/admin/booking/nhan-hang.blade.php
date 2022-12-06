@@ -11,7 +11,7 @@
         <label for="">Ngày đem xe đến : {{ now(7) }}</label>
 
     </div>
-    <form class="row" target="_blank" action="{{ route('phieu-nhan-may', ['booking_detail_id'=>$booking_detail->id]) }}"
+    <form class="row" target="_blank" action="{{ route('phieu-nhan-xe', ['booking_detail_id'=>$booking_detail->id]) }}"
         method="POST">
         @csrf
 
@@ -84,7 +84,7 @@
 
     {{--
     <div>
-        <form action="{{ route('phieu-nhan-may', ['booking_detail_id'=>$booking_detail->id]) }}" method="POST">
+        <form action="{{ route('phieu-nhan-xe', ['booking_detail_id'=>$booking_detail->id]) }}" method="POST">
             @csrf
 
             <h2 class="mx-auto">Phiếu tiếp nhận xe</h2>

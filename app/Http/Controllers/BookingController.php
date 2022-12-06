@@ -136,7 +136,7 @@ class BookingController extends Controller
          'email.required' => 'vui lòng nhập email',
          'email.email' => 'Email không hợp lệ',
          'email.regex' => 'Email không hợp lệ',
-         'date.required' => 'Vui lòng chọn ngày đem máy đến',
+         'date.required' => 'Vui lòng chọn ngày đem xe đến',
          'name_car.required' => 'Vui lòng nhập tên xe',
          'company_car_id.required' => 'Vui lòng chọn hãng xe',
          'interval.required' => 'Vui lòng chọn khung giờ đem xe máy đến',
@@ -268,7 +268,7 @@ class BookingController extends Controller
          $booking->bookingDetail()->delete();
          $booking->delete();
       }
-      return redirect(route('dat-lich.danh-sach-may'));
+      return redirect(route('dat-lich.danh-sach-xe'));
    }
 
 
@@ -333,7 +333,7 @@ class BookingController extends Controller
                // }
             }
 
-            $data['title'] = 'Bạn có máy cần sửa:';
+            $data['title'] = 'Bạn có xe cần sửa:';
             $data['from'] = 1;
             $data['to'] = 1;
             $data['code'] =    $request->booking_detail_id;
@@ -364,12 +364,12 @@ class BookingController extends Controller
 
 
 
-      // return redirect(route('dat-lich.danh-sach-may'));
+      // return redirect(route('dat-lich.danh-sach-xe'));
    }
    public function deleteBookingDetail($id)
    {
       Booking::destroy($id);
-      return redirect('dat-lich.danh-sach-may');
+      return redirect('dat-lich.danh-sach-xe');
    }
 
    public function repairDetail($id)
@@ -524,7 +524,7 @@ class BookingController extends Controller
    }
 
 
-   // public function danhSachMayCanSua()
+   // public function danhSachXeCanSua()
    // {
    // }
 
@@ -609,7 +609,7 @@ class BookingController extends Controller
       return view('admin.booking.ds_chua_xac_nhan', compact('booking_details'));
    }
 
-   public function tiepNhanMay($booking_detail_id)
+   public function tiepNhanXe($booking_detail_id)
    {
       $pool = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
       $rand_code = substr(str_shuffle(str_repeat($pool, 5)), 0, 16);
