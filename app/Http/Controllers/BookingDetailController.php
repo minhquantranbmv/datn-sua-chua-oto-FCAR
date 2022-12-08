@@ -201,7 +201,7 @@ class BookingDetailController extends Controller
 
 
 
-    public function phieuNhanMay($booking_detail_id, Request $request)
+    public function phieuNhanXe($booking_detail_id, Request $request)
     {
 
         $booking_detail = BookingDetail::find($booking_detail_id);
@@ -220,13 +220,13 @@ class BookingDetailController extends Controller
             $booking_detail->save();
             if ($request->btn == 'luu_xuat') {
                 $data = ['booking_detail' =>  $booking_detail];
-                $pdf = PDF::loadHTML('admin.booking.pdf_phieu_nhan_may');
+                $pdf = PDF::loadHTML('admin.booking.pdf_phieu_nhan_xe');
 
-                $pdf = PDF::loadView('admin.booking.pdf_phieu_nhan_may', $data);
+                $pdf = PDF::loadView('admin.booking.pdf_phieu_nhan_xe', $data);
                 // dd(config('mail.mailers.smtp.username'));
-                return  $pdf->stream('nhan-may.pdf');
+                return  $pdf->stream('nhan-xe.pdf');
             }
-            return redirect(route('dat-lich.tiep-nhan-may', ['booking_detail_id' => $booking_detail_id]));
+            return redirect(route('dat-lich.tiep-nhan-xe', ['booking_detail_id' => $booking_detail_id]));
         }
     }
 
@@ -242,9 +242,9 @@ class BookingDetailController extends Controller
             ];
             $email = $booking_detail->booking->email;
             Mail::send('admin.mail.coifirm_finish_menber', $data, function ($message) use ($email) {
-                $message->from('manhhung17062001@gmail.com', 'F-BIKE');
+                $message->from('doanhnghiepfcar@gmail.com', 'F-BIKE');
                 $message->to($email, 'John Doe');
-                $message->subject('Thông báo sửa máy hoàn thành');
+                $message->subject('Thông báo sửa xe hoàn thành');
             });
         }
         return back();

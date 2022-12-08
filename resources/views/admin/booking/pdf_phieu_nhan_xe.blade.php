@@ -24,7 +24,7 @@
             <div style="display: inline-block;">
                 <div><b>Biển số:</b> {{ $booking_detail->name_car }} </div><br>
                 <div><span><b style="padding-left: 50px">Hãng
-                            máy:</b>
+                            xe:</b>
                         {{
                         $booking_detail->carCompany->company_name}}</span></div>
             </div>
@@ -45,7 +45,7 @@
             <td>
                 <div>
 
-                    <h4><b>NHÂN VIÊN NHẬN MÁY</b></h4>
+                    <h4><b>NHÂN VIÊN NHẬN XE</b></h4>
 
                 </div>
             </td>
