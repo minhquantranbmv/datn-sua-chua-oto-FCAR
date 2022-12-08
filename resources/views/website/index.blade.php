@@ -48,7 +48,7 @@
                                         }
                                         ?>
                                         <div class="product-item">
-                                            <div class="product-img">
+                                            <div class="product-img" >
                                                 @foreach ($images as $image)
                                                 @if ($image->product_id == $item->id)
                                                 <a href="/san-pham/{{ $item->slug }}">
