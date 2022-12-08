@@ -1,6 +1,6 @@
 <header class="header-area header-wrapper">
     <!-- header-top-bar -->
-    <div class="header-top-bar plr-185 bg-primary text-white">
+    <div class="header-top-bar plr-185 bg-secondary text-white">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 d-none d-md-block">
