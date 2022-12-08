@@ -16,7 +16,7 @@ class CarCompany extends Model
         return $this->hasMany(Product::class);
     }
     /**
-     * The roles that belong to the ComputerCompany
+     * The roles that belong to the CarCompany
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */

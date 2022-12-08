@@ -23,7 +23,7 @@
 
         <!-- BREADCRUMBS SETCTION START -->
         <div class="breadcrumbs-section plr-200 mb-80 section">
-            <div class="breadcrumbs overlay-bg">
+            <div class=" overlay-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -34,17 +34,17 @@
                                         <h3><b>Họ và Tên:</b> {{ $booking_detail->booking->full_name }}</h3>
                                         <h3><b>Email:</b> {{ $booking_detail->booking->email }}
                                         </h3>
-                                        {{-- <h3><b>Địa Chỉ:</b> Thôn 9 Cát Quế - Hoài Đức - Hà Nội --}}
+                                       
                                         </h3>
                                         <h3><b>Số điện thoại:</b>
                                             {{ $booking_detail->booking->phone }}</h3>
+                                    
 
                                     </div>
                                     <div class="col-lg-6">
                                         <h3><b>Biển số: </b>
                                             {{ $booking_detail->name_car }}</h3>
-                                        <h3><b>Hãng xe:</b>
-                                            {{ $booking_detail->carCompany->company_name }}</h3>
+                                         
                                         <h3><b>Khung giờ mang xe tới:</b>
                                             {{ $booking_detail->khung_gio }} </h3>
                                         <h3><b>Ngày sửa:</b>

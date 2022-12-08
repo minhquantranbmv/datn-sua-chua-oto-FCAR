@@ -109,7 +109,7 @@ class BookingController extends Controller
          $result[$key]['count'] = $booking_detail->count();
          $result[$key]['booking_detail'] = [];
          foreach ($booking_detail as $b_d) {
-            // dd($b_d->computerCompany()->get());
+            // dd($b_d->carCompany()->get());
             array_push($result[$key]['booking_detail'], $b_d->toArray());
          }
       }
@@ -140,7 +140,7 @@ class BookingController extends Controller
          'name_car.required' => 'Vui lòng nhập tên xe',
          'company_car_id.required' => 'Vui lòng chọn hãng xe',
          'interval.required' => 'Vui lòng chọn khung giờ đem xe máy đến',
-         // 'company_computer_id.required' => 'Bạn phải nhập tên',
+         
 
       ]);
 
@@ -197,7 +197,7 @@ class BookingController extends Controller
       $details = [
          'email' => $request->email,
          'name' => $request->full_name,
-         'computer' => $request->name_computer,
+         'copany_name' => $request->company_name,
          'interval' => $request->interval,
          'repair_type' => $request->repair_type,
          'desc' => $booking_detail->description,
