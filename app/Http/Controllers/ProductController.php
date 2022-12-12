@@ -75,11 +75,7 @@ class ProductController extends Controller
         $model->status = $request->status;
         $model->companyCar_id = $request->companyCar_id;
         $model->insurance = $request->insurance;
-        // $model->cpu = $request->cpu;
-        // $model->ram = $request->ram;
-        // $model->cardgraphic = $request->cardgraphic;
-        // $model->screen = $request->screen;
-        // $model->harddrive = $request->harddrive;
+        
         $model->save();
         if ($request->hasfile('images')) {
             foreach ($request->file('images') as $key => $file) {
@@ -124,11 +120,7 @@ class ProductController extends Controller
         $model->status = $request->status;
         $model->companyCar_id = $request->companyCar_id;
         $model->insurance = $request->insurance;
-        // $model->cpu = $request->cpu;
-        // $model->ram = $request->ram;
-        // $model->cardgraphic = $request->cardgraphic;
-        // $model->screen = $request->screen;
-        // $model->harddrive = $request->harddrive;
+       
         $model->save();
         $images = DB::table('product_images')->where('product_id', $id)->get();
 

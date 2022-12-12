@@ -12,9 +12,24 @@ use Illuminate\Http\Request;
 class ComponentController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $components = Component::all();
+       // $components = Component::all();
+       //$CarCompany = CarCompany::all();
+        $components = Component::when($request->name_component, function ($query, $name_component) {
+            return $query->where('name_component', 'like', "%{$name_component}%");
+        })->when($request->status, function ($query) use ($request) {
+            if ($request->status == 1) {
+                return $query->where('status', '=', '1');
+            }
+            if ($request->status == 2) {
+                return $query->where('status', '=', '0');
+            }
+            if ($request->status == 0) {
+                return $query->orderBy('created_at', 'DESC');
+            }
+       
+        })->orderBy('status', 'DESC')->paginate(10);
         return view('admin.components.index', compact('components'));
     }
 
@@ -22,16 +37,17 @@ class ComponentController extends Controller
 
 
 
-    // public function remove($id)
-    // {
-    //     $model = ComponentController::find($id);
-    //     if (!empty($model->image)) {
-    //         $imgPath = str_replace('storage/', '', $model->image);
-    //         Storage::delete($imgPath);
-    //     }
-    //     $model->delete();
-    //     return redirect(route('detail-product.index'));
-    // }
+    public function remove($id)
+    {
+        $Component = Component::find($id);
+        $Component = Component::where('id', '=', $id)->first();
+        if ($Component) {
+            Component::where('id', $id)->delete();
+            return redirect(route('component.index'))->with('success', 'Xóa thành công');
+        } else {
+            return redirect(route('component.index'))->with('error', 'Không tìm thấy');
+        }
+    }
     public function addForm()
     {
         $categories = CategoryComponent::all();
@@ -40,52 +56,47 @@ class ComponentController extends Controller
     }
     public function saveAdd(Request $request)
     {
-        // dd($request->all());
-
-        $model =  Component::create($request->all());
-        // if ($request->hasFile('anh')) {
-        //     $imgPath = $request->file('anh')->store('products');
-        //     $imgPath = str_replace('public/', 'storage/', $imgPath);
-        //     $request->merge(['image' => $imgPath]);
-        // }
-        // dd($model); 
-        foreach ($request->car_company_id as $c) {
-            ComponentCarConpany::create(['component_id' => $model->id, 'car_conpany_id' => $c, 'active' => 1]);
-        }
-        // $model->fill($request->all());
-        // $model->save();
-        return redirect(route('component.index'));
+        $model = new Component();
+        $model->fill($request->all());
+        $model->save();
+        return redirect(route('component.index'))->with('success', 'Thêm thành công');
     }
 
-    // public function editForm($id)
-    // {
-    //     $pro = ComponentController::find($id);
-    //     if (!$pro) {
-    //         return back();
-    //     }
-    //     return view(
-    //         'admin.detail-products.edit',
-    //         compact('pro')
-    //     );
-    // }
-    // public function saveEdit(ComponentControllerRequest $request, $id)
-    // {
-    //     // $request la gui du lieu len
-    //     // dd($request->name)
-    //     $model = ComponentController::find($id);
-    //     Storage::delete($model->image);
-    //     if (!$model) {
-    //         return back();
-    //     }
-    //     if ($request->hasFile('anh')) {
-    //         Storage::delete($model->image);
-    //         $imgPath = $request->file('anh')->store('products');
-    //         $imgPath = str_replace('public/', 'storage/', $imgPath);
-    //         $request->merge(['image' => $imgPath]);
-    //     }
+    public function editForm($id)
+    {
+        $pro = Component::find($id);
+        $categories = CategoryComponent::all();
+        $car_company = CarCompany::all();
+        if (empty($pro)) {
+            return redirect(route('component.index'))->with('error', 'Không tìm thấy danh mục');
+        }
+        return view(
+            'admin.components.edit',
+            compact('pro','categories','car_company')
+        );
+    }
+    public function saveEdit(Request $request, $id)
+    {
+        $model = Component::find($id);
+        $model->fill($request->all());
+        $model->save();
+        return redirect(route('component.index'))->with('success', 'Sửa thành công');
+    }
 
-    //     $model->fill($request->all());
-    //     $model->save();
-    //     return redirect(route('detail-product.index'));
-    // }
+
+    public function ShowHide(Request $request, $id)
+    {
+        $model = Component::find($id);
+        if ($model->status == 1) {
+            $model['status'] = 0;
+            $model->save();
+            Toastr::success('Ẩn sản phẩm thành công', 'Thành công');
+            return back();
+        } else {
+            $model['status'] = 1;
+            $model->save();
+            Toastr::success('Hiện sản phẩm thành công', 'Thành công');
+            return back();
+        }
+    }
 }
