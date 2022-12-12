@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-@section('title', 'Thêm sản phẩm')
+@section('title', 'Thêm mới phụ tùng')
 @section('content')
 
 
@@ -87,7 +87,7 @@
                     <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
-                <div class="form-group pr-2">
+                <!-- <div class="form-group pr-2">
                     <label for="">Chọn loại xe máy</label>
                     <div class=" row">@foreach ($car_company as $c)
                         <div class="form-check col-4">
@@ -99,6 +99,15 @@
                         </div>
                         @endforeach
                     </div>
+                </div> -->
+                <div class="form-group">
+                    <label for="">Chọn hãng xe</label>
+                    <select name="car_company_id" class="form-control">
+                        <option hidden value="">Chọn hãng xe</option>
+                        @foreach ($car_company as $item)
+                        <option value="{{ $item->id }}">{{ $item->company_name }}</option>
+                        @endforeach
+                    </select>
                 </div>
 
 

@@ -197,7 +197,7 @@ class BookingController extends Controller
       $details = [
          'email' => $request->email,
          'name' => $request->full_name,
-         'copany_name' => $request->company_name,
+         // 'copany_name' => $request->company_name,
          'interval' => $request->interval,
          'repair_type' => $request->repair_type,
          'desc' => $booking_detail->description,

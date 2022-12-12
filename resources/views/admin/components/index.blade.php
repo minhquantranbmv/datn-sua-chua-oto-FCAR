@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-@section('title', 'Danh sách sản phẩm')
+@section('title', 'Danh sách phụ tùng')
 @section('content')
 @if (Session::has('success'))
 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -22,58 +22,40 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card">
-            {{-- <div class="card-header">
-                <form action="" method="get">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="">Từ khóa</label>
-                                <input type="text" class="form-control" name="keyword"
-                                    value="{{ $searchData['keyword'] }}" placeholder="Tìm theo tên sản phẩm">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label for="">Tên cột</label>
-                                <select name="column_names" class="form-control">
-                                    @foreach ($column_names as $key => $item)
-                                    <option @if ($key==$searchData['column_names']) selected @endif value="{{ $key }}">
-                                        {{ $item }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label for="">Hãng</label>
-                                <select name="companyComputer_id" class="form-control">
-                                    <option value="">Tất cả</option>
-                                    @foreach ($ComputerCompany as $item)
-                                    <option @if ($item->id == $searchData['companyComputer_id']) selected @endif
-                                        value="{{ $item->id }}">{{ $item->company_name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label for="">Sắp xếp theo</label>
-                                <select name="order_by" class="form-control">
-                                    @foreach ($order_by as $key => $item)
-                                    <option @if ($key==$searchData['order_by']) selected @endif value="{{ $key }}">{{
-                                        $item }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-2 d-flex pt-3 align-items-center justify-content-end">
-                            <button class="btn btn-primary" style="width: 120px; height: 40px;" type="submit">Tìm
-                                kiếm</button>
-                        </div>
-                    </div>
-                </form>
-            </div> --}}
+        <div class="card">           
+
+                                        
+    <form action="{{ route('component.index') }}" method="GET" class="col-8">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name_component" id="" aria-describedby="helpId"
+                        placeholder="Tìm kiếm theo tên">
+                </div>
+            </div>
+                      
+
+            <div class="col-3">
+                <div class="form-group">
+                    <select name="status" class="form-control ">
+                        <option value="0">Trạng thái</option>
+                        <option value="1">Đang hiện</option>
+                        <option value="2">Đang ẩn</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-3">
+                <div>
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </form>
+
             <div class="card-body">
                 <table class="table table-bordered">
                     <thead>
@@ -81,6 +63,7 @@
                         <th>Tên</th>
                         <th>Giá mua</th>
                         <th>Giá bán</th>
+                        <th>Số lượng</th>
                         <th class="px-0 text-center">Bảo hành</th>
                         <th class="px-0 text-center">Trạng thái</th>
                         <th>
@@ -98,6 +81,7 @@
 
                             <td>{{ $item->import_price }}</td>
                             <td>{{ $item->price }}</td>
+                            <td>{{ $item->qty }}</td>
                             <td>{{ $item->insurance }}</td>
                             <td>{{ $item->status == 1 ? 'Hiển thị' : 'Không hiển thị' }}</td>
                             <td>
@@ -108,7 +92,7 @@
                                     class="btn btn-sm btn-warning">Sửa</a>
                                 @endcan
 
-                                @can('delete-product')
+                                <!-- @can('delete-product')
                                 @if($item->status === 0)
                                 <form class="d-inline" action="component/show-hide/{{$item->id}}" method="POST">
                                     @csrf
@@ -127,10 +111,10 @@
                                     </button>
                                 </form>
                                 @endif
-                                @endcan
-                                <!-- <a onclick="return confirm('Bạn có chắc muốn xóa')"
+                                @endcan -->
+                                 <a onclick="return confirm('Bạn có chắc muốn xóa')"
                                     href="{{route('component.remove', ['id' => $item->id])}}"
-                                    class="btn btn-sm btn-danger">Xóa</a> -->
+                                    class="btn btn-sm btn-danger">Xóa</a> 
                             </td>
                         </tr>
                         @endforeach
