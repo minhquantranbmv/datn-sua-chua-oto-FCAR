@@ -11,7 +11,7 @@ class Component extends Model
     protected $table = 'components';
     public $fillable = ['name_component', 'price', 'desc', 'qty', 'status', 'import_price', 'insurance', 'category_component_id'];
     /**
-     * The computer_companies that belong to the Component
+     * The car_companies that belong to the Component
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */

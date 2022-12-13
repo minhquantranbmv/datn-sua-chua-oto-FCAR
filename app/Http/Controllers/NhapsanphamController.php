@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\NhaphangRequest;
 use App\Models\BookingDetail;
 use App\Models\Category;
-use App\Models\ComputerCompany;
+use App\Models\CarCompany;
 use App\Models\DetailProduct;
 use App\Models\Nhaphangsanpham;
 use App\Models\Product;

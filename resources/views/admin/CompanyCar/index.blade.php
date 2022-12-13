@@ -54,7 +54,7 @@
                                 </button>
 
 
-                                {{-- <a href="{{ route('CompanyComputer.remove', ['id' => $item->id]) }}"
+                                {{-- <a href="{{ route('CompanyCar.remove', ['id' => $item->id]) }}"
                                     class="btn btn-sm btn-danger">Xóa</a> --}}
                                 @endcan
                             </td>

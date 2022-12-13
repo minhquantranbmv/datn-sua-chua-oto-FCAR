@@ -89,7 +89,7 @@
                                             <label for="">Thương hiệu xe</label>
                                             <font color="red">*</font>
                                             <select name="company_car_id" id="con_ht">
-                                                {{-- <option value="company_computer_id" hidden>Thương hiệu máy</option>
+                                                {{-- <option value="company_car_id" hidden>Thương hiệu xe</option>
                                                 --}}
                                                 @foreach ($company_Car as $item)
                                                 <option value="{{ $item->id }}">{{ $item->company_name }}</option>

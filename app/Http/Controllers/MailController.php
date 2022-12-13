@@ -23,7 +23,7 @@ class MailController extends Controller
     {
 
         $details = array(
-            'email' =>'manhhung1762001@gmail.com',
+            'email' =>'doanhnghiepfcar@gmail.com',
             'name' => 'trung',
             'password' =>'123456'
         );

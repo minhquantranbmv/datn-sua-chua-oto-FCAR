@@ -129,11 +129,7 @@ class HomeController extends Controller
         ->take(6);
         $productNew = Product::where('status', 1)->orderBy('id', 'DESC')->paginate(9);
         $images_product_list = DB::table('product_images')->get();
-        // dd($ComputerCompany = ComputerCompany::find($id)->first());
-        // $comPany = ComputerCompany::where('companyComputer_id',$companyComputer_id)->get();
-        // $ComputerCompany = ComputerCompany::where('id',$id)->get();
-        // $pro = Product::find($id);
-        // $detailPro = DetailProduct::where('id', $companyComputer_id)->get();
+       
         if ($CarCompany == null) {
             return back()->with('error', 'Không tìm thấy danh mục sản phẩm');
         }
