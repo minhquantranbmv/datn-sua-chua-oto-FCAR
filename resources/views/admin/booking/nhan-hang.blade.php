@@ -64,8 +64,8 @@
         {{--
         <b>SDT:</b> <input class="form-control" type="text" name="phone" value="{{$booking_detail->booking->phone}}">
         <br>
-        <b>Tên máy:</b> <input class="form-control" type="text" name="name_computer"
-            value="{{ $booking_detail->name_computer }}">
+        <b>Tên máy:</b> <input class="form-control" type="text" name="name_car"
+            value="{{ $booking_detail->name_car }}">
         <br><b>Ngày đặt:</b>{{
         date($booking_detail->created_at) }}
         <br>

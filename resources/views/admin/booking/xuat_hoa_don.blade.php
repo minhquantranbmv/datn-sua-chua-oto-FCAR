@@ -59,7 +59,7 @@
             <p class="col-3"> <b> Hãng xe: </b>{{ $booking_detail->carCompany->company_name }}</p>
         </div>
         {{--
-        <p>Hãng máy: {{ $booking_detail->computerCompany->company_name }}</p> --}}
+        <p>Hãng xe: {{ $booking_detail->carCompany->company_name }}</p> --}}
         <br><b>Ngày xuất hoá đơn:</b>{{ ' '. $booking_detail_bill->date }}
         <br><br>
         <h5>DANH SÁCH SỬA CHỮA VÀ THAY THẾ</h5>

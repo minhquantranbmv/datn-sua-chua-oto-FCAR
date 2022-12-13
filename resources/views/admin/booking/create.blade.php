@@ -120,14 +120,14 @@
     <h5 class="mx-auto">Máy 1</h5>
     <div class="form-group">
       <label for="">Tên máy tính</label>
-      <input type="text" class="form-control" name="name_computer" id="" aria-describedby="" placeholder="">
+      <input type="text" class="form-control" name="name_car" id="" aria-describedby="" placeholder="">
       <small id="" class="form-text text-muted">Help text</small>
     </div>
     <div class="form-group">
       <label for="">Loại máy tính</label>
 
-      <select class="form-control" name="computer_company_id" id="">
-        @foreach ($computers as $item)
+      <select class="form-control" name="car_company_id" id="">
+        @foreach ($cars as $item)
         <option value="{{ $item->id }}">{{ $item->company_name }}</option>
         @endforeach
       </select>

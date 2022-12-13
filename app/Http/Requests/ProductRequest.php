@@ -33,11 +33,7 @@ class ProductRequest extends FormRequest
             'qty' => 'required|numeric|min:1|max:99',
             'status' => 'required|between:0,1',
             'desc_short' => 'required',
-            // 'ram' => 'required',
-            // 'cpu' => 'required',
-            // 'cardgraphic' => 'required',
-            // 'screen' => 'required',
-            // 'harddrive' => 'required',
+           
             'images.*' => 'mimes:jpg,png,jpeg,gif,svg',
             'slug' => 'required|string|min:3|max:60|unique:products,slug,' . $this->id,
 

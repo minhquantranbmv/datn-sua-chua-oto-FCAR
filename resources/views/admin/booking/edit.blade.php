@@ -22,9 +22,9 @@
     <div class="form-group">
       <label for="">Loại máy tính</label>
 
-      <select class="form-control" name="company_computer_id" id="">
-        @foreach ($computers as $item)
-        <option @if ($item->id==$booking_detail->company_computer_id)
+      <select class="form-control" name="company_car_id" id="">
+        @foreach ($cars as $item)
+        <option @if ($item->id==$booking_detail->company_car_id)
           selected
           @endif value="{{ $item->id }}">{{ $item->company_name }}</option>
         @endforeach
@@ -209,16 +209,16 @@
     <h5 class="mx-auto">Máy 1</h5>
     <div class="form-group">
       <label for="">Tên máy tính</label>
-      <input type="text" class="form-control" name="name_computer" id="" aria-describedby="" placeholder="">
+      <input type="text" class="form-control" name="name_car" id="" aria-describedby="" placeholder="">
       <small id="" class="form-text text-muted">Help text</small>
     </div>
     <div class="col-4">
       <div class="form-group">
         <label for="">Loại máy tính</label>
 
-        <select class="form-control" name="company_computer_id" id="">
-          @foreach ($computers as $item)
-          <option @if ($item->id==$booking_detail->company_computer_id)
+        <select class="form-control" name="company_car_id" id="">
+          @foreach ($cars as $item)
+          <option @if ($item->id==$booking_detail->company_car_id)
             selected
             @endif value="{{ $item->id }}">{{ $item->company_name }}</option>
           @endforeach
