@@ -30,7 +30,7 @@ class BookingController extends Controller
    public function formCreateBooking()
    {
       $cars = CarCompany::all();
-      // dd($computers);
+      // dd($cars);
       return view('admin.booking.create', compact('cars'));
    }
    public function formEditBooking($id)

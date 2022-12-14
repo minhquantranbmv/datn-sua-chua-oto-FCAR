@@ -40,8 +40,7 @@ class HomeController extends Controller
         // dd($productNew);
         $products = Product::where('status', 1)->get();
         $images = DB::table('product_images')->get();
-        // $searchData = compact('keyword', 'computerCompany_id');
-
+       
         $news = News::all();
         return view('website.index', compact('products', 'CarCompany', 'productNew', 'images', 'product_hot_sell', 'news'));
     }
@@ -90,7 +89,7 @@ class HomeController extends Controller
 
         $CarCompany = CarCompany::all();
         $pro = Product::where('slug', $slug)->first();
-        // dd($ComputerCompany);
+        
         if (!$pro || !$CarCompany) {
             // $productNew = Product::where('status', 1)->orderBy('id', 'DESC')->get()->take(4);
             // $products = Product::where('status', 1)->get();

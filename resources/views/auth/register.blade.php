@@ -179,8 +179,9 @@
 
 
 
-                        <button class="submit-btn-1 mt-20 btn-hover-1" type="submit" value="register" style="background-color: rgb(240, 10, 60);">Đăng
-                                        ký</button>
+                         <button class="submit-btn-1 mt-20 btn-hover-1 w-50 font-weight-bold text-white" type="submit" value="register" style="background-color: rgb(240, 10, 60);">Đăng
+                                        Ký</button> 
+                                       
                     </form>
 
                 </div>
