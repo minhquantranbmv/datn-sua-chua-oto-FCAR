@@ -38,7 +38,8 @@
     <link rel="stylesheet" href=" {{ asset('public') }}/css/reset.css">
     <link rel="stylesheet" href=" {{ asset('public') }}/css/style.css">
     <link rel="stylesheet" href="{{ asset('public') }}/css/responsive.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/ {{ asset('public') }}/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> @include('layout_client.style')
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/ {{ asset('public') }}/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     @include('layout_client.style')
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                                     <h4>Liên hệ</h4>
                                     <h3>Nhập Phản Hồi</h3>
                                 </div>
-                                <form class="form" method="post" action="mail/mail.php">
+                                 <form class="form" method="post" action="mail/mail.php">
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
                                             <div class="form-group">
@@ -102,7 +103,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </form> 
                             </div>
                         </div>
                         <div class="col-lg-4 col-12">
@@ -119,8 +120,8 @@
                                     <i class="fa fa-envelope-open"></i>
                                     <h4 class="title">Email:</h4>
                                     <ul>
-                                        <li><a href="mailto:info@yourwebsite.com">fbike86@yourwebsite.com</a></li>
-                                        <li><a href="mailto:info@yourwebsite.com">htdv_fbike86@yourwebsite.com</a></li>
+                                        <li><a href="mailto:info@yourwebsite.com">doanhnghiepfcar@gmail.com</a></li>
+                                        <li><a href="mailto:info@yourwebsite.com">phdvfbike@gmail.com</a></li>
                                     </ul>
                                 </div>
                                 <div class="single-info">
@@ -141,7 +142,7 @@
         <!-- Map Section -->
         <div class="map-section">
             <div id="">
-                <iframe class="w-full " <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8868640816986!2d105.74712471485446!3d21.03721238599369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134558498af422d%3A0xb9ec8519723c95d1!2zMSBQLiBUcuG7i25oIFbEg24gQsO0LCBYdcOibiBQaMawxqFuZywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1670397823458!5m2!1svi!2s" height="600"> ></iframe>
+                <iframe class="w-full " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8868640816986!2d105.74712471485446!3d21.03721238599369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134558498af422d%3A0xb9ec8519723c95d1!2zMSBQLiBUcuG7i25oIFbEg24gQsO0LCBYdcOibiBQaMawxqFuZywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1670397823458!5m2!1svi!2s" height="600"> 
                     </iframe>
             </div>
         </div>
@@ -197,6 +198,7 @@
     <!-- <script src="{{  asset('public') }}/js/map-script.js"></script> -->
     <!-- Active JS -->
     <script src="{{  asset('public') }}/js/active.js"></script>
+    @include('layout_client.script')
 
 
 </body>

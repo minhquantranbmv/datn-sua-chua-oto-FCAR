@@ -10,7 +10,7 @@
                                     <img src="{{ asset('client') }}/img/logo/logo.jpg" alt="" width="80%">
                                 </div>
                                 <div class="footer-brief">
-                                    <p class="text-white">F-BIKE xin gửi lời cảm ơn sâu sắc tới Quý khách hàng đã quan tâm và ủng hộ trong suốt thời gian vừa qua . Hàng triệu chiếc xe đã được đưa tới trung tâm để sửa chữa nhằm mang lại niềm vui, hiệu quả và lợi ích cho khách
+                                    <p class="text-white">Cửa hàng dịch vụ sửa chữa F-BIKE xin gửi lời cảm ơn sâu sắc tới Quý khách hàng đã quan tâm và ủng hộ trong suốt thời gian vừa qua . Hàng triệu chiếc xe đã được đưa tới trung tâm để sửa chữa nhằm mang lại niềm vui, hiệu quả và lợi ích cho khách
                                         hàng.</p>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                         <a href="{{ asset('') }}lien-he" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Liên
                                                 Hệ</span></a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="#" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Điều khoản và dịch vụ</span></a>
                                     </li>
                                     <li>
@@ -46,7 +46,7 @@
                                     </li>
                                     <li>
                                         <a href="#" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Chính sách đổi trả</span></a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -82,8 +82,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="single-footer">
-                                <h4 class="footer-title border-left text-white">Liên Hệ</h4>
-                                <div class="footer-message">
+                                <h4 class="footer-title border-left text-white">Giờ Phục Vụ</h4>
+                                <p class="text-white">Chúng tôi phục vụ quý khách hàng tất cả các ngày trong tuần từ: 8h - 20h mỗi ngày</p>
+                                <!-- <div class="footer-message">
                                     <form action="#" class="text-black">
                                         <input type="text" name="name" placeholder="Tên của bạn..." class="text-black">
                                         <input type="text" name="email" placeholder="Email của bạn..." class="text-black">
@@ -91,7 +92,7 @@
                                         <button class="submit-btn-1 mt-20 btn-hover-1" type="submit">Gửi Liên
                                             Hệ</button>
                                     </form>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
