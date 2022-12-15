@@ -63,7 +63,7 @@
                                                             <a href="#" data-image="{{ asset($image->path) }}"
                                                                 data-zoom-image="{{ asset($image->path) }}">
                                                                 <img class="zoom_03" src="{{ asset($image->path) }}"
-                                                                    alt="" height="100px" width="100px">
+                                                                    alt="" height="100px" width="100pxc">
                                                             </a>
                                                         </div>
                                                         @endforeach

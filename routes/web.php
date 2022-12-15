@@ -48,10 +48,10 @@ Route::post('/verify', [AuthController::class, 'verify'])->name('verify');
 // //  Đăng nhập
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
-Route::get('login-otp', [LoginController::class, 'showLoginOtp'])->name('show.login');
-Route::post('login-otp', [LoginController::class, 'sendLoginOtp'])->name('send.otp.login');
-Route::get('login-otp-code', [LoginController::class, 'showLoginOtpCode'])->name('login.otp.code');
-Route::post('send-login-otp', [LoginController::class, 'loginOtp'])->name('login.otp');
+// Route::get('login-otp', [LoginController::class, 'showLoginOtp'])->name('show.login');
+// Route::post('login-otp', [LoginController::class, 'sendLoginOtp'])->name('send.otp.login');
+// Route::get('login-otp-code', [LoginController::class, 'showLoginOtpCode'])->name('login.otp.code');
+// Route::post('send-login-otp', [LoginController::class, 'loginOtp'])->name('login.otp');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
 // //  Quên mật khẩu
@@ -63,11 +63,11 @@ Route::get('reset-password', [ForgotPasswordController::class, 'showResetPasswor
 Route::post('insert-password', [ForgotPasswordController::class, 'insertResetPasswordForm'])->name('insert.password.post');
 
 //  Giỏ hàng
-Route::post('save-cart', [CartController::class, 'saveCart'])->middleware(['auth','phoneverify']);
-Route::post('add-cart', [CartController::class, 'add'])->middleware(['auth','phoneverify']);
-Route::get('gio-hang', [CartController::class, 'showCart'])->middleware(['auth','phoneverify']);
-Route::get('delete-to-cart/{rowId}', [CartController::class, 'deleteToCart'])->middleware(['auth','phoneverify']);
-Route::post('update-cart-quantity', [CartController::class, 'updateCartQuantity'])->middleware(['auth','phoneverify']);
+Route::post('save-cart', [CartController::class, 'saveCart'])->middleware(['auth']);
+Route::post('add-cart', [CartController::class, 'add'])->middleware(['auth']);
+Route::get('gio-hang', [CartController::class, 'showCart'])->middleware(['auth']);
+Route::get('delete-to-cart/{rowId}', [CartController::class, 'deleteToCart'])->middleware(['auth']);
+Route::post('update-cart-quantity', [CartController::class, 'updateCartQuantity'])->middleware(['auth']);
 
 //  Thanh toán
 Route::get('thanh-toan', [PaymentController::class, 'showPayment'])->name('payment')->middleware(['auth','phoneverify']);
