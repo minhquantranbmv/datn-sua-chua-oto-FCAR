@@ -12,7 +12,7 @@
                 <th scope="col" class="sort" data-sort="status">SDT</th>
                 <th scope="col">Nhân viên</th>
                 {{-- <th scope="col">Trạng thái</th> --}}
-                <th scope="col" class="sort" data-sort="completion">Nhân viên</th>
+                <th scope="col" class="sort" data-sort="completion">Thao tác</th>
                 @can('add-booking')
                 <th scope="col"><a href="{{ route('dat-lich.add') }}">Tạo mới</a></th>
                 @endcan

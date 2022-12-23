@@ -58,7 +58,7 @@
     </select>
 </div>
             <div>
-                <button type="submit" class="btn btn-primary">Tìm ki</button>
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
                 {{-- <button type="submit" name="status" value="received" class="btn btn-primary">Chưa xác nhận</button>
             <button type="submit" name="status" value="latch" class="btn btn-primary">Đã xác nhận</button>
             <button type="submit" name="status" value="cancel" class="btn btn-primary">Hủy bỏ</button> --}}
@@ -74,7 +74,7 @@
                     <th scope="col" class="sort" data-sort="status">Số điện thoại</th>
                     <th scope="col">Thời gian</th>
                     <th scope="col">Trạng thái</th>
-                    <th scope="col" class="sort" data-sort="completion">Sửa thông tin</th>
+                    <th scope="col" class="sort" data-sort="completion">Thao tác</th>
                     @can('add-booking')
                         <th scope="col"><a href="{{ route('dat-lich.add') }}">Tạo mới</a></th>
                     @endcan
