@@ -172,7 +172,7 @@
 
                             <button type="submit" class="site-btn">ĐĂNG NHẬP NGAY</button>
                         </form>
-                        <a href="/forget-password" class="forget_pass">QUÊN MẬT KHẨU?</a>
+                        <!-- <a href="/forget-password" class="forget_pass">QUÊN MẬT KHẨU?</a> -->
                     </div>
                 </div>
                 <div class="col-lg-6">

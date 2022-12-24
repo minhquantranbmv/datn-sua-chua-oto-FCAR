@@ -2,7 +2,7 @@
   
 namespace App\Imports;
 
-use App\Models\ComputerCompany;
+use App\Models\CarCompany;
 use App\Models\DetailProduct;
 use App\Models\Product;
 use Illuminate\Support\Facades\Hash;

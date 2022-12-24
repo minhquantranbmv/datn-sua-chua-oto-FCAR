@@ -31,7 +31,7 @@ class ProductExport implements FromCollection, WithHeadings
                 '4' => $row->qty,
                 '5' => $row->desc,
                 '6' => $row->status,
-                '7' => $row->companyComputer->company_name,
+                '7' => $row->companyCar->company_name,
             );
         }
 

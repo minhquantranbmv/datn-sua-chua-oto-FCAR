@@ -20,7 +20,7 @@ class ProductExport implements FromCollection, WithHeadings
     {
 
         $data = Product::all();
-        $data->load('companyComputer',);
+        $data->load('companyCar',);
 
         foreach ($data as $row) {
             if ($row->status == 0) {
@@ -37,19 +37,14 @@ class ProductExport implements FromCollection, WithHeadings
 
             $order[] = array(
                 '0' => $row->name,
-                '1' => $row->companyComputer->company_name,
+                '1' => $row->companyCar->company_name,
                 '2' => $row->image_product->path,
                 '3' => $row->import_price,
                 '4' => $row->price,
                 '5' => $row->qty,
                 '6' => $row->status,
-                '7' => $row->desc_short,
-                '8' =>$row->ram,
-                '9'=> $row->cpu,
-                '10'=>$row->cardgraphic,
-                '11' =>$row->screen,
-                '12' =>$row->harddrive,
-                '13' =>$row->slug
+                '7' => $row->desc_short,               
+                '8' =>$row->slug
             );
         }
 
@@ -67,12 +62,7 @@ class ProductExport implements FromCollection, WithHeadings
             'Giá bán',
             'Số lượng',
             'Trạng thái',
-            'Mô tả ngắn',
-            'Ram',
-            'Cpu',
-            'cardgraphic',
-            'screen',
-            'harddrive',
+            'Mô tả ngắn',           
             'slug'
         ];
     }

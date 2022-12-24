@@ -2,7 +2,7 @@
 
 namespace App\Imports;
 
-use App\Models\ComputerCompany;
+use App\Models\CarCompany;
 use App\Models\ImageProduct;
 use App\Models\Product;
 use App\User;
@@ -36,16 +36,16 @@ class ProductImport implements ToModel, WithStartRow, WithValidation, SkipsOnErr
 
         $a = Product::query()->updateOrCreate([
             'name' => $row[0],
-            'companyComputer_id' => $category->id,
+            'companyCar_id' => $category->id,
             'import_price' => $row[3],
             'price' => $row[4],
             'qty' => intval($row[5]),
             'status' => $row[6],
             'desc_short' => $row[7],
-            'ram' => $row[8],
-            'cpu' => $row[9],
-            'cardgraphic' => $row[10],
-            'screen' => $row[11],
+            // 'ram' => $row[8],
+            // 'cpu' => $row[9],
+            // 'cardgraphic' => $row[10],
+            // 'screen' => $row[11],
             'harddrive' => $row[12],
             'slug' => $row[13],
 
