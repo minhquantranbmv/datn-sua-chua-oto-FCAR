@@ -32,7 +32,7 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <div class="mt-1 text-center">
                         <div class="preview-image"> </div>
                     </div>
@@ -45,7 +45,7 @@
                     @error('images.*')
                     <p class="text-danger">{{ $message }}</p>
                     @enderror
-                </div>
+                </div> -->
                 <div class="form-group">
                     <label for="">Giá nhập</label>
                     <input type="number" name="import_price" value="{{ old('import_price') }}" class="form-control"

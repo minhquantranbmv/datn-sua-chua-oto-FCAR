@@ -121,7 +121,7 @@
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-center">
-                    {{-- {{ $components->appends($_GET)->links() }} --}}
+                     {{ $components->appends($_GET)->links() }} 
                 </div>
             </div>
         </div>
