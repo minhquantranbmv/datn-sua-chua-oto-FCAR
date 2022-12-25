@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Models\UserRepair;
 use App\Models\bill_detail;
 use App\Models\Booking;
+use App\Models\BookingDetail;
 use App\Models\CategoryComponent;
 use App\Models\Component;
 use App\Models\ComponentCarConpany;
@@ -30,7 +31,10 @@ class HomeAdminController extends Controller
     $total_product = Product::count('id');
     $total_user = User::count('id');
     $total_mua_hang = list_bill::where('type', 1)->where('status', 2)->count('id');
-    $total_dat_lich = list_bill::where('type', 2)->where('status', 2)->count('id');
+    // $total_dat_lich = list_bill::where('type', 2)->where('status', 2)->count('id');
+    $total = BookingDetail::where('status_repair','like', 'finish')->join('bookings', 'booking_details.booking_id', 'bookings.id') ->get();
+    // dd($total);
+    $total_dat_lich = count( $total->toArray());
     $total_category_component = CategoryComponent::count('id');
     $total_component = Component::count('id');
 

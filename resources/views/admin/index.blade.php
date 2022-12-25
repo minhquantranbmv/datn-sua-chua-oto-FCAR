@@ -78,7 +78,7 @@
 
             </div>
             @endcan
-            @can('list-bill')
+            <!-- @can('list-bill')
             <div class="col-lg-3 col-6">
 
                 <div class="small-box bg-warning">
@@ -93,7 +93,7 @@
                             class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            @endcan
+            @endcan -->
 
             <div class="col-lg-3 col-6">
 
@@ -154,7 +154,7 @@
     </div>
     @can('dash-board')
     <div class="row">
-        <div class="col-6">
+        <!-- <div class="col-6">
             <div class="card">
                 <div class="card-header">
                     <h5 class="card-title">Top sản phẩm bán chạy</h5>
@@ -173,7 +173,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-6">
             <div class="card">
                 <div class="card-header">
@@ -247,7 +247,7 @@
                 </div>
             </div>
         </div>
-        <div class='col-6'>
+        <!-- <div class='col-6'>
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Tổng doanh thu bán: <span id='doanhthutongban'>
@@ -260,7 +260,7 @@
                     </canvas>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     @endcan
 </section>

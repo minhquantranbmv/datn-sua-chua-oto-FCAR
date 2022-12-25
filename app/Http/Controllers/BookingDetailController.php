@@ -140,19 +140,19 @@ class BookingDetailController extends Controller
                 ];
                 $bill_repair =    list_bill::create($data);
                 foreach ($repair_parts as $r) {
-                    if (!empty($r->component->import_price)) {
-                        $nhap = $r->component->import_price;
-                    } else {
-                        $nhap = 0;
-                    }
+                    // if (empty($r->component->import_price)) {
+                    //     $nhap = $r->component->import_price;
+                    // } else {
+                    //     $nhap = 0;
+                    // }
                     $data1 = [
                         'quaty' => $r->quantity,
                         'code_bill' => $bill_repair->codebill,
                         'bill_id' => $bill_repair->id,
-                        'nhap' =>  $nhap,
+                        'nhap' =>  $r->unit_price,
                         'ban' => $r->unit_price,
                         'component_id' => $r->component_id,
-                        'description' => $r->name_product,
+                        'description' => $r->name_product,  
                     ];
                     bill_detail::create($data1);
                 }
