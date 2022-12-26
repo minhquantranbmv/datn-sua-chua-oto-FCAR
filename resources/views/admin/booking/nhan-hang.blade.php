@@ -75,7 +75,7 @@
         {{-- <input type="submit" placeholder="Xuất Phiếu"> --}}
         <div class="mx-auto container ">
             <button type="submit" class="btn btn-success " name="btn" value="luu_xuat">Lưu và xuất phiếu</button>
-            <button type="submit" name="btn" id="" class="btn btn-primary " value="luu"> Lưu thông tin</button>
+            <!-- <button type="submit" name="btn" id="" class="btn btn-primary " value="luu"> Lưu thông tin</button> -->
             {{-- <a name="" id="" class="btn btn-info" href="#" role="button">Xuất phiếu</a> --}}
         </div>
 

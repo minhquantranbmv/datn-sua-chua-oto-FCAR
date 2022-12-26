@@ -49,7 +49,7 @@
                 <table class="table table-bordered text-center">
                     <thead>
                         <th>STT</th>
-                        <th>Người mua</th>
+                        <th>Khách hàng</th>
                         <th>Mã hóa đơn</th>
                         <th>Tổng tiền</th>
                         {{-- <th>Thanh toán</th> --}}

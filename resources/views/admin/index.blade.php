@@ -142,7 +142,7 @@
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
                     </div>
-                    <a href="{{ route('sua-chua.danh-sach-chua-xac-nhan') }}" class="small-box-footer">Chi tiết <i
+                    <a href="{{ route('sua-chua.danh-sach-da-sua-xong') }}" class="small-box-footer">Chi tiết <i
                             class="fas fa-arrow-circle-right"></i></a>
 
                 </div>

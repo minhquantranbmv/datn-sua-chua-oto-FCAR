@@ -68,7 +68,7 @@
             <table class="table table-bordered">
                 <thead>
                     <th>STT</th>
-                    <th>Người mua</th>
+                    <th>Khách hàng</th>
                     <th>Số điện thoại</th>
                     <th>Mã hóa đơn</th>
                     <th>Tổng tiền</th>

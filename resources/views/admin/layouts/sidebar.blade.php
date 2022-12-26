@@ -50,7 +50,7 @@
                 <a href="" class="nav-link {{ request()->is('admin/CompanyCar*') ? 'active ' : '' }}">
                     <i class="nav-icon fas fa-align-justify"></i>
                     <p>
-                        Danh mục sản phẩm
+                        Các hãng xe
                         <i class="fas fa-angle-left right"></i>
 
                         {{-- <span class="badge badge-info right">6</span> --}}
