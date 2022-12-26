@@ -28,7 +28,7 @@
         <div class="form-group col-3">
             <select name="status" class="form-control ">
                 <option value="">Tất cả</option>
-                <option value="Chờ xử lý">Chờ xử lý</option>
+                <!-- <option value="Chờ xử lý">Chờ xử lý</option> -->
                 <option value="Tiếp nhận xe">Tiếp nhận xe</option>
                 <option value="Đang chờ sửa">Đang chờ sửa</option>
                 <option value="Đang sửa">Đang sửa</option>
@@ -92,8 +92,8 @@
                                 <td>
                                     @if ($item->booking_detail->status_booking == 'cancel')
                                         <p class="text-danger">Hủy</p>
-                                    @elseif($item->booking_detail->status_booking == null)
-                                        <p class="text-info">Chờ xử lý</p>
+                                    <!-- @elseif($item->booking_detail->status_booking == null)
+                                        <p class="text-info">Chờ xử lý</p> -->
                                     @elseif($item->booking_detail->status_booking == 'latch')
                                     @if ($item->booking_detail->status_repair == null)
                                             <p class="text-info">Tiếp nhận xe </p>
