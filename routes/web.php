@@ -100,6 +100,10 @@ Route::get('cua-hang/tim-kiem/{name}', [HomeController::class, 'seachproduct']);
 Route::get('gioi-thieu', function () {
     return view('website.gioi-thieu');
 });
+//trang chính sách
+Route::get('chinh-sach', function () {
+    return view('website.chinh-sach');
+});
 // trang đặt lịch
 Route::get('dat-lich', function () {
     $company_Car = CarCompany::all();

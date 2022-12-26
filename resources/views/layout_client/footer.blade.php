@@ -38,10 +38,10 @@
                                         <a href="{{ asset('') }}lien-he" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Liên
                                                 Hệ</span></a>
                                     </li>
-                                    <!-- <li>
-                                        <a href="#" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Điều khoản và dịch vụ</span></a>
-                                    </li>
                                     <li>
+                                        <a href="{{ asset('') }}chinh-sach" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Điều khoản và dịch vụ</span></a>
+                                    </li>
+                                    <!-- <li>
                                         <a href="#" class="text-white"><i class="zmdi zmdi-plus"></i><span class="b">Chính sách bảo mật </span></a>
                                     </li>
                                     <li>
