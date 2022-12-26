@@ -41,7 +41,7 @@
                                 <a href="{{ route('category_component.edit', ['id' => $item->id]) }}"
                                     class="btn btn-sm btn-warning">Sửa</a>
                                 @endcan
-                                @can('delete-category')
+                                <!-- @can('delete-category')
                                 {{-- <a href="{{ route('category_component.remove', ['id' => $item->id]) }}"
                                     onclick="return confirm('Bạn có chắc muốn xóa')"
                                     class="btn btn-sm btn-danger">Xóa</a> --}}
@@ -53,7 +53,7 @@
 
                             </td>
                         </tr>
-                        <!-- Modal -->
+                        
                     <div class="modal fade" id="exampleModalCenter{{ $item->id }}" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                         @endforeach
                     </tbody>
                 </table>

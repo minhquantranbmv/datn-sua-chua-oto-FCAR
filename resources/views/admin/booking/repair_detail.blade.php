@@ -144,7 +144,7 @@
                                             <tr class="form_linh_kien_sua">
                                                 <td class="col-9">
                                                     <input type="text" name="product_repair[]" value=""
-                                                        placeholder="Nhập linh kiện" class="form-control">
+                                                        placeholder="Nhập phụ tùng sửa" class="form-control">
                                                     {{-- <select name="category_component_id" id="" class="form-control"
                                                         onchange="selectComponents(this)" style="width: 200px;">
                                                         @foreach ($categories as $c)
@@ -186,7 +186,7 @@
                                     <thead>
                                         <tr>
                                             <th>STT</th>
-                                            <th>Tên linh kiện</th>
+                                            <th>Tên phụ tùng</th>
                                             <th>Số lượng</th>
                                             <th>Đơn giá</th>
                                             <th>Thành tiền</th>
@@ -207,10 +207,10 @@
 
                             {{-- <button type="submit">Hoàn thành sửa</button> --}}
                             <div class="d-flex justify-content-between">
-                                <div><a name="btn" id="" class="btn btn-danger" href="#" role="button">Hủy sửa</a>
+                                <!-- <div><a name="btn" id="" class="btn btn-danger" href="#" role="button">Hủy sửa</a>
                                     {{-- <button type="submit" class="btn btn-primary" name="btn" value="pause">Tạm dừng
                                         sửa</button> --}}
-                                </div>
+                                </div> -->
                                 <div>
                                     <button name="btn" type="submit" value="finish" class="btn btn-success">Hoàn
                                         thành sửa</button>
