@@ -148,17 +148,17 @@ class BookingController extends Controller
       // dd($now,$request->date);
       if (strtotime($nowDate) == strtotime($request->date)) {
          $nowTime = date('H:i:s');
-         if ($request->interval == 1) {
+         if ((int)$request->interval == 1) {
             $time = '10:00:00';
-         } else  if ($request->interval == 2) {
+         } else  if ((int)$request->interval == 2) {
             $time = '12:00:00';
-         } else  if ($request->interval == 3) {
+         } else  if ((int)$request->interval == 3) {
             $time = '14:00:00';
-         } else  if ($request->interval == 4) {
+         } else  if ((int)$request->interval == 4) {
             $time = '16:00:00';
-         } else  if ($request->interval == 5) {
+         } else  if ((int)$request->interval == 5) {
             $time = '18:00:00';
-         } else  if ($request->interval == 6) {
+         } else  if ((int)$request->interval == 6) {
             $time = '20:00:00';
          } else {
             $time = '22:00:00';

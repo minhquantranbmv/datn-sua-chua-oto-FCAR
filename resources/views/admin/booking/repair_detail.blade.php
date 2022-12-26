@@ -144,7 +144,7 @@
                                             <tr class="form_linh_kien_sua">
                                                 <td class="col-9">
                                                     <input type="text" name="product_repair[]" value=""
-                                                        placeholder="Nhập linh kiện" class="form-control">
+                                                        placeholder="Nhập phụ tùng sửa" class="form-control">
                                                     {{-- <select name="category_component_id" id="" class="form-control"
                                                         onchange="selectComponents(this)" style="width: 200px;">
                                                         @foreach ($categories as $c)
@@ -186,7 +186,7 @@
                                     <thead>
                                         <tr>
                                             <th>STT</th>
-                                            <th>Tên linh kiện</th>
+                                            <th>Tên phụ tùng</th>
                                             <th>Số lượng</th>
                                             <th>Đơn giá</th>
                                             <th>Thành tiền</th>

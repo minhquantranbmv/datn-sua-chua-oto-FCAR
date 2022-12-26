@@ -15,7 +15,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <!-- Navbar Search -->
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
             <i class="far fa-bell"></i>
             <span class="badge badge-danger navbar-badge pending NotificationBadge"
@@ -38,7 +38,7 @@
                 </a>
                 @endforeach
             </div>
-        </li>
+        </li> -->
         <li class="nav-item">
             <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                 <i class="fas fa-expand-arrows-alt"></i>
