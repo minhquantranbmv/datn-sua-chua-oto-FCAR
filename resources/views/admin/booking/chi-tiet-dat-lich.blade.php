@@ -44,10 +44,34 @@
                                     <div class="col-lg-6">
                                         <h3><b>Biển số: </b>
                                             {{ $booking_detail->name_car }}</h3>
+
+                                           
+
+                                          
+       
                                          
-                                        <h3><b>Khung giờ mang xe tới:</b>
-                                            {{ $booking_detail->khung_gio }} </h3>
-                                        <h3><b>Ngày sửa:</b>
+                                         <h3><b>Khung giờ mang xe tới:</b>
+                                         @if ($booking_detail->booking->interval ==1) <h4 value="1">8h-10h</h4>
+                                        @endif
+
+                                        @if ($booking_detail->booking->interval ==2) <h4 value="2">10h-12h</h4>
+                                        @endif
+
+                                        @if ($booking_detail->booking->interval ==3) <h4 value="3">12h-14h</h4>
+                                        @endif
+
+                                        @if ($booking_detail->booking->interval ==4) <h4 value="4">14h-16h</h4>
+                                        @endif
+
+                                        @if ($booking_detail->booking->interval ==5) <h4 value="5">16h-18h</h4>
+                                        @endif
+
+                                        @if ($booking_detail->booking->interval ==6) <h4 value="6">18h-20h</h4>
+                                        @endif
+                                    
+                                    
+                                    </h3> 
+                                        <h3><b>Ngày hẹn mang xe tới:</b>
                                             {{ $booking_detail->booking->date }}</h3>
 
                                     </div>
